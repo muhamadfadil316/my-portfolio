@@ -18,10 +18,9 @@ export function ContactSection() {
 
   const socials = [
     { icon: <Mail size={20} />, label: 'Email', value: profile.email, href: `mailto:${profile.email}`, color: '#4F8EF7' },
-    { icon: <Github size={20} />, label: 'GitHub', value: '@rizkydev', href: profile.github, color: '#e2e8f0' },
-    { icon: <Linkedin size={20} />, label: 'LinkedIn', value: 'Rizky Pratama', href: profile.linkedin, color: '#0a66c2' },
-    { icon: <Instagram size={20} />, label: 'Instagram', value: '@rizkydev', href: profile.instagram, color: '#e1306c' },
-    { icon: <MessageCircle size={20} />, label: 'WhatsApp', value: '+62 812 3456 7890', href: profile.whatsapp, color: '#25d366' },
+    { icon: <Github size={20} />, label: 'GitHub', value: '@muhamadfadil316', href: profile.github, color: '#e2e8f0' },
+    { icon: <Linkedin size={20} />, label: 'LinkedIn', value: 'Muhamad Fadil', href: profile.linkedin, color: '#0a66c2' },
+    { icon: <Instagram size={20} />, label: 'Instagram', value: '@fadilorsy', href: profile.instagram, color: '#e1306c' },
   ]
 
   return (

@@ -19,9 +19,9 @@ export function AboutSection() {
 
             <div className="grid grid-cols-2 gap-4 pt-4">
               {[
-                { label: 'Projects', value: '50+' },
+                { label: 'Projects', value: '10+' },
                 { label: 'Events MC', value: '20+' },
-                { label: 'Organisasi', value: '4' },
+                { label: 'Organisasi', value: '2' },
                 { label: 'Cups of Coffee', value: '∞' },
               ].map((stat) => (
                 <div key={stat.label} className="glass rounded-xl p-4">

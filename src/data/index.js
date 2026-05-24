@@ -55,7 +55,7 @@ export const projects = [
 export const mcEvents = [
   {
     id: 1,
-    title: 'Study Banding STT Terpadu Nurul Fikri X Universitas Negeri Jakarta',
+    title: 'Studi Banding STT Terpadu Nurul Fikri X Universitas Negeri Jakarta',
     event: 'Sharing Inspiratif',
     date: 'Juli 2025',
     description: 'MC acara Sharing Inspiratif (Study Banding) BEM STT Terpadu Nurul Fikri dengan Universitas Negeri Jakarta dengan peserta total 100+ dari kedua belah pihak.',
@@ -63,10 +63,10 @@ export const mcEvents = [
   },
   {
     id: 2,
-    title: 'Hackathon Nasional',
-    event: 'HackFest Indonesia 2024',
-    date: 'September 2024',
-    description: 'MC dan moderator panel juri pada hackathon nasional 48 jam dengan 200+ tim peserta.',
+    title: 'Studi Banding BEM STT Terpadu Nurul Fikri X LP3I Depok',
+    event: 'Studi Banding',
+    date: 'Juli 2025',
+    description: 'MC Study Banding BEM STT Terpadu Nurul Fikri dengan BEM LP3I Depok dengan peserta total 100+ dari kedua belah pihak',
     image: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=600&q=80',
   },
   {
@@ -164,20 +164,20 @@ export const hobbies = [
   { name: 'Coding', icon: '💻', desc: 'Eksplorasi stack baru tiap minggu' },
   { name: 'Desain', icon: '🎨', desc: 'Figma & motion design' },
   { name: 'Musik', icon: '🎧', desc: 'Lo-fi, indie, electronic' },
-  { name: 'Gaming', icon: '🎮', desc: 'Strategy & indie games' },
-  { name: 'Fotografi', icon: '📷', desc: 'Street & arsitektur' },
+  { name: 'Volunteering', icon: '🤝', desc: 'Aktif di komunitas & kegiatan sosial' }, // Pengganti Gaming
+  { name: 'Networking', icon: '☕', desc: 'Ngobrol santai & bangun relasi baru' },    // Pengganti Fotografi
   { name: 'Public Speaking', icon: '🎙️', desc: 'Workshop & seminar' },
   { name: 'Editing', icon: '🎬', desc: 'Video & motion graphics' },
   { name: 'Membaca', icon: '📚', desc: 'Tech, sci-fi, self-dev' },
 ]
 
 export const musicFavorites = [
-  { title: 'Lofi Study Mix', artist: 'ChilledCow', genre: 'Lo-Fi Hip Hop', mood: 'Focus' },
-  { title: 'Random Access Memories', artist: 'Daft Punk', genre: 'Electronic', mood: 'Energetic' },
-  { title: 'In Rainbows', artist: 'Radiohead', genre: 'Alternative', mood: 'Deep' },
-  { title: 'blonde', artist: 'Frank Ocean', genre: 'R&B / Soul', mood: 'Chill' },
-  { title: 'Currents', artist: 'Tame Impala', genre: 'Psychedelic Pop', mood: 'Dreamy' },
-  { title: 'DAMN.', artist: 'Kendrick Lamar', genre: 'Hip Hop', mood: 'Hype' },
+  { title: 'Berpayung Tuhan', artist: 'Nadin Amizah', genre: 'Folk / Pop', mood: 'Melancholic' },
+  { title: 'Ocean Eyes', artist: 'Billie Eilish', genre: 'Alt-Pop', mood: 'Dreamy' },
+  { title: 'Kita Usahakan Rumah Itu', artist: 'Sal Priadi', genre: 'Indie Pop', mood: 'Hopeful' },
+  { title: '2112', artist: 'Reality Club', genre: 'Indie Rock', mood: 'Energetic' },
+  { title: 'Ah', artist: 'Nadin Amizah', genre: 'Folk / Pop', mood: 'Deep' },
+  { title: 'Wildflower', artist: 'Billie Eilish', genre: 'Alt-Pop', mood: 'Sad / Chill' },
 ]
 
 export const navLinks = [
