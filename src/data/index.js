@@ -161,11 +161,11 @@ export const experiences = [
 ]
 
 export const hobbies = [
-  { name: 'Coding', icon: '💻', desc: 'Eksplorasi stack baru tiap minggu' },
+  { name: 'Community Building', icon: '🌐', desc: 'Wadah kumpul, kolaborasi, & seru-seruan bareng' }, // Pengganti Coding
   { name: 'Desain', icon: '🎨', desc: 'Figma & motion design' },
   { name: 'Musik', icon: '🎧', desc: 'Lo-fi, indie, electronic' },
-  { name: 'Volunteering', icon: '🤝', desc: 'Aktif di komunitas & kegiatan sosial' }, // Pengganti Gaming
-  { name: 'Networking', icon: '☕', desc: 'Ngobrol santai & bangun relasi baru' },    // Pengganti Fotografi
+  { name: 'Volunteering', icon: '🤝', desc: 'Aktif di komunitas & kegiatan sosial' },
+  { name: 'Networking', icon: '☕', desc: 'Ngobrol santai & bangun relasi baru' },
   { name: 'Public Speaking', icon: '🎙️', desc: 'Workshop & seminar' },
   { name: 'Editing', icon: '🎬', desc: 'Video & motion graphics' },
   { name: 'Membaca', icon: '📚', desc: 'Tech, sci-fi, self-dev' },
