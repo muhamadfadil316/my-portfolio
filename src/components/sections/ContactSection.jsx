@@ -1,20 +1,10 @@
 import { useState } from 'react'
-import { Github, Instagram, Linkedin, Mail, MessageCircle, Send, MapPin, CheckCircle } from 'lucide-react'
+import { Github, Instagram, Linkedin, Mail, MapPin, Copy, ExternalLink } from 'lucide-react'
 import { profile } from '../../data'
 import { SectionWrapper, SectionTitle } from '../ui/SectionWrapper'
 
 export function ContactSection() {
-  const [form, setForm] = useState({ name: '', email: '', message: '' })
-  const [sent, setSent] = useState(false)
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    const mailto = `mailto:${profile.email}?subject=Pesan dari ${form.name}&body=${encodeURIComponent(`Nama: ${form.name}\nEmail: ${form.email}\n\n${form.message}`)}`
-    window.open(mailto, '_blank')
-    setSent(true)
-    setForm({ name: '', email: '', message: '' })
-    setTimeout(() => setSent(false), 4000)
-  }
+  const [copied, setCopied] = useState(null)
 
   const socials = [
     { icon: <Mail size={20} />, label: 'Email', value: profile.email, href: `mailto:${profile.email}`, color: '#4F8EF7' },
@@ -32,8 +22,7 @@ export function ContactSection() {
           subtitle="Terbuka untuk kolaborasi, diskusi teknologi, atau sekadar ngobrol."
         />
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Left - socials */}
+        <div className="grid gap-12">
           <div className="space-y-4">
             <div className="glass rounded-2xl p-6 mb-6">
               <div className="flex items-center gap-3 mb-4">
@@ -58,80 +47,57 @@ export function ContactSection() {
             </div>
 
             {socials.map((s) => (
-              <a
+              <div
                 key={s.label}
-                href={s.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-4 glass rounded-xl p-4 hover:border-accent/30 hover:translate-x-1 transition-all duration-200 group"
+                className="flex items-center justify-between glass rounded-xl p-4 hover:border-accent/30 hover:translate-x-1 transition-all duration-200 group"
               >
-                <div
-                  className="p-2.5 rounded-lg transition-colors"
-                  style={{ background: `${s.color}15`, color: s.color }}
-                >
-                  {s.icon}
+                <div className="flex items-center gap-4">
+                  <div
+                    className="p-2.5 rounded-lg transition-colors"
+                    style={{ background: `${s.color}15`, color: s.color }}
+                  >
+                    {s.icon}
+                  </div>
+                  <div>
+                    <p className="font-mono text-xs text-text-dim">{s.label}</p>
+                    <p className="text-sm text-text group-hover:text-accent transition-colors">{s.value}</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="font-mono text-xs text-text-dim">{s.label}</p>
-                  <p className="text-sm text-text group-hover:text-accent transition-colors">{s.value}</p>
+
+                <div className="flex items-center gap-2">
+                  <a
+                    href={s.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-md text-text-dim hover:text-accent/90 bg-transparent hover:bg-accent/5 transition-colors"
+                    aria-label={`Open ${s.label}`}
+                  >
+                    <ExternalLink size={16} />
+                  </a>
+
+                  <button
+                    type="button"
+                    onClick={async () => {
+                      try {
+                        await navigator.clipboard.writeText(s.value)
+                        setCopied(s.label)
+                        setTimeout(() => setCopied(null), 1800)
+                      } catch (err) {
+                        console.error('copy failed', err)
+                      }
+                    }}
+                    className="p-2 rounded-md text-text-dim hover:text-accent/90 bg-transparent hover:bg-accent/5 transition-colors"
+                    aria-label={`Copy ${s.label}`}
+                  >
+                    {copied === s.label ? (
+                      <span className="text-xs text-green-400 font-medium">Copied</span>
+                    ) : (
+                      <Copy size={16} />
+                    )}
+                  </button>
                 </div>
-              </a>
-            ))}
-          </div>
-
-          {/* Right - form */}
-          <div className="glass rounded-2xl p-8">
-            <h3 className="font-display font-semibold text-lg text-text mb-6">Kirim Pesan</h3>
-
-            {sent ? (
-              <div className="flex flex-col items-center justify-center py-12 gap-3">
-                <CheckCircle size={40} className="text-green-400" />
-                <p className="text-text font-medium">Pesan terkirim!</p>
-                <p className="text-text-dim text-sm text-center">Email client Anda akan terbuka. Terima kasih telah menghubungi saya.</p>
               </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <label className="block font-mono text-xs text-text-dim mb-2 tracking-wide">Nama</label>
-                  <input
-                    type="text"
-                    required
-                    value={form.name}
-                    onChange={(e) => setForm({ ...form, name: e.target.value })}
-                    placeholder="Nama lengkap Anda"
-                    className="w-full px-4 py-3 bg-bg border border-border rounded-xl text-text text-sm placeholder-text-dim focus:outline-none focus:border-accent/60 transition-colors"
-                  />
-                </div>
-                <div>
-                  <label className="block font-mono text-xs text-text-dim mb-2 tracking-wide">Email</label>
-                  <input
-                    type="email"
-                    required
-                    value={form.email}
-                    onChange={(e) => setForm({ ...form, email: e.target.value })}
-                    placeholder="email@example.com"
-                    className="w-full px-4 py-3 bg-bg border border-border rounded-xl text-text text-sm placeholder-text-dim focus:outline-none focus:border-accent/60 transition-colors"
-                  />
-                </div>
-                <div>
-                  <label className="block font-mono text-xs text-text-dim mb-2 tracking-wide">Pesan</label>
-                  <textarea
-                    required
-                    rows={5}
-                    value={form.message}
-                    onChange={(e) => setForm({ ...form, message: e.target.value })}
-                    placeholder="Halo! Saya ingin..."
-                    className="w-full px-4 py-3 bg-bg border border-border rounded-xl text-text text-sm placeholder-text-dim focus:outline-none focus:border-accent/60 transition-colors resize-none"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="w-full flex items-center justify-center gap-2 py-3 bg-accent text-white font-medium rounded-xl hover:bg-accent/90 hover:shadow-lg hover:shadow-accent/20 transition-all duration-200 active:scale-95"
-                >
-                  <Send size={16} /> Kirim Pesan
-                </button>
-              </form>
-            )}
+            ))}
           </div>
         </div>
       </div>
