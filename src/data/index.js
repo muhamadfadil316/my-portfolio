@@ -68,7 +68,7 @@ export const awards = [
     title: 'Best Participant',
     issuer: 'Women in Tech - GDGOC',
     date: '2025',
-    image: './public/award.JPEG',
+    image: '/award.jpeg',
     description: 'Penghargaan Best Participant ini saya terima dari event Women in Tech sebagai bentuk apresiasi atas partisipasi aktif, semangat belajar, dan keterlibatan saya selama acara berlangsung.',
   },
 ]
@@ -80,7 +80,7 @@ export const mcEvents = [
     event: 'Sharing Inspiratif',
     date: 'Juli 2025',
     description: 'MC acara Sharing Inspiratif (Study Banding) BEM STT Terpadu Nurul Fikri dengan Universitas Negeri Jakarta dengan peserta total 100+ dari kedua belah pihak.',
-    image: './public/sharinginspiratif.jpeg',
+    image: '/sharinginspiratif.JPEG',
   },
   {
     id: 2,
@@ -88,7 +88,7 @@ export const mcEvents = [
     event: 'Studi Banding',
     date: 'Juli 2025',
     description: 'MC Study Banding BEM STT Terpadu Nurul Fikri dengan BEM LP3I Depok dengan peserta total 100+ dari kedua belah pihak',
-    image: './public/stuband.jpeg',
+    image: '/stuband.jpeg',
   },
   {
     id: 3,
@@ -96,7 +96,7 @@ export const mcEvents = [
     event: 'Universitas / Organisasi Penyelenggara',
     date: 'Desember 2025',
     description: 'Dipercaya sebagai MC Utama yang memandu jalannya puncak kompetisi bergengsi ASTRO 7.0, mengoordinasi rangkaian acara yang dinamis, serta menghidupkan atmosfer kompetitif yang melibatkan ratusan peserta dari berbagai universitas ternama.',
-    image: './public/mainastro.jpeg',
+    image: '/mainastro.JPEG',
   },
   {
     id: 4,
@@ -104,7 +104,7 @@ export const mcEvents = [
     event: 'Penyelenggara Acara',
     date: 'Oktober 2025',
     description: 'Bertindak sebagai MC Utama dalam mengawal seminar edukatif berskala besar, menciptakan ruang diskusi yang inklusif, hangat, dan interaktif guna membangun kesadaran mendalam mengenai urgensi kesehatan mental di kalangan generasi muda.',
-    image: './public/mentalhealth.jpeg',
+    image: '/mentalhealth.JPEG',
   },
   {
     id: 5,
@@ -112,7 +112,7 @@ export const mcEvents = [
     event: 'Penyelenggara Acara',
     date: 'November 2025',
     description: 'Menjadi Master of Ceremonies (MC) Utama pada ajang pencarian bakat ASTRO Got Talent. Sukses membangun energi panggung yang meriah, interaktif, dan memukau penonton sepanjang penampilan kompetisi seni dan kreativitas mahasiswa.',
-    image: './public/astrogottalent.jpeg',
+    image: '/astrogottalent.JPEG',
   },
   {
     id: 6,
@@ -120,7 +120,7 @@ export const mcEvents = [
     event: 'Penyelenggara Acara',
     date: 'November 2025',
     description: 'Bertugas sebagai Moderator profesional dalam forum diskusi internasional, menjembatani dialog interaktif antar pembicara global, serta merangkum gagasan-gagasan akademis yang kompleks ke dalam bahasa yang mudah dipahami oleh audiens multinasional.',
-    image: './public/ICT.jpeg',
+    image: '/ICT.JPEG',
   },
   {
     id: 7,
@@ -128,7 +128,7 @@ export const mcEvents = [
     event: 'Penyelenggara Acara',
     date: 'Desember 2025',
     description: 'Bertugas sebagai MC pada Debat Rakyat Kampus untuk menjaga alur acara, membangun suasana diskusi yang interaktif, dan memastikan setiap sesi berjalan lancar serta mudah dipahami audiens.',
-    image: './public/deras.jpeg',
+    image: '/deras.JPEG',
   },
   {
     id: 8,
@@ -136,7 +136,7 @@ export const mcEvents = [
     event: 'Organisasi Penyelenggara',
     date: 'Maret 2025',
     description: 'Memandu jalannya aksi sosial GEMA sebagai MC Utama di panti asuhan kawasan Citeureup. Menghadirkan keceriaan melalui ice breaking yang interaktif, menjaga alur acara yang khidmat, serta menyatukan semangat kebersamaan dalam momen berbagi.',
-    image: './public/GEMA.jpeg',
+    image: '/GEMA.JPEG',
   },
   {
     id: 9,
@@ -144,7 +144,7 @@ export const mcEvents = [
     event: 'Fakultas / Universitas',
     date: 'Mei 2025',
     description: 'Menjadi MC Utama pada Kuliah Umum bertajuk "From Microservices to AI: OpenShift Powers Any Workload, Anywhere". Sukses mengawal jalannya pemaparan materi mutakhir mengenai Kecerdasan Artifisial, Virtualisasi, dan Keamanan Jaringan di hadapan ratusan akademisi dan praktisi IT.',
-    image: './public/kuliahumum.jpeg',
+    image: '/kuliahumum.JPEG',
   },
 ]
 

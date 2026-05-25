@@ -153,7 +153,7 @@ export function HeroSection() {
             <div className="relative">
               <div className="w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-accent/30 glow-blue relative z-10">
                 <img
-                  src="../../../public/profile.jpeg"
+                  src="/profile.JPEG"
                   alt={profile.name}
                   className="w-full h-full object-cover"
                   style={{ objectPosition: '50% 20%' }}
