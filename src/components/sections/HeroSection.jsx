@@ -151,9 +151,10 @@ export function HeroSection() {
             <div className="relative">
               <div className="w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-accent/30 glow-blue relative z-10">
                 <img
-                  src=""
+                  src="../../../public/profile.jpeg"
                   alt={profile.name}
                   className="w-full h-full object-cover"
+                  style={{ objectPosition: '50% 20%' }}
                 />
                 {/* Gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-bg/60 to-transparent" />
