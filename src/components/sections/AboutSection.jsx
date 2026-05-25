@@ -19,7 +19,7 @@ export function AboutSection() {
 
             <div className="grid grid-cols-2 gap-4 pt-4">
               {[
-                { label: 'Projects', value: '10+' },
+                { label: 'Expertise', value: '2' },
                 { label: 'Events MC', value: '20+' },
                 { label: 'Organisasi', value: '2' },
                 { label: 'Cups of Coffee', value: '∞' },

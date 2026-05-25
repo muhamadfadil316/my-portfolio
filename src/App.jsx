@@ -3,7 +3,8 @@ import { Footer } from './components/layout/Footer'
 import { BackToTop } from './components/ui/BackToTop'
 import { HeroSection } from './components/sections/HeroSection'
 import { AboutSection } from './components/sections/AboutSection'
-import { PortfolioSection } from './components/sections/PortfolioSection'
+import { ExpertiseSection } from './components/sections/ExpertiseSection'
+import { AwardsSection } from './components/sections/AwardsSection'
 import { MCSection } from './components/sections/MCSection'
 import { ExperienceSection } from './components/sections/ExperienceSection'
 import { HobbiesSection } from './components/sections/HobbiesSection'
@@ -16,7 +17,8 @@ export default function App() {
       <main>
         <HeroSection />
         <AboutSection />
-        <PortfolioSection />
+        <ExpertiseSection />
+        <AwardsSection />
         <MCSection />
         <ExperienceSection />
         <HobbiesSection />

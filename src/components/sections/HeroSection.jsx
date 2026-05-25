@@ -3,6 +3,8 @@ import { profile, techStack } from "../../data";
 import { useTypingEffect } from "../../hooks/useTypingEffect";
 
 const typingTexts = [
+  "Social Media Specialist",
+  "Video Editor",
   "Data Analyst",
   "AI Engineer",
   "Public Speaker",
@@ -95,10 +97,10 @@ export function HeroSection() {
             {/* CTAs */}
             <div className="flex flex-wrap gap-3 mb-10">
               <button
-                onClick={() => handleScroll("#portfolio")}
+                onClick={() => handleScroll("#expertise")}
                 className="px-6 py-3 bg-accent text-white font-medium rounded-xl hover:bg-accent/90 hover:shadow-lg hover:shadow-accent/25 transition-all duration-200 active:scale-95"
               >
-                Lihat Portofolio
+                Lihat Expertise
               </button>
               <button
                 onClick={() => handleScroll("#contact")}
@@ -171,7 +173,7 @@ export function HeroSection() {
               className="absolute top-4 -left-4 glass rounded-xl px-3 py-2 animate-bounce"
               style={{ animationDuration: "3s" }}
             >
-              <p className="font-mono text-xs text-accent">⚡ 10+ Projects</p>
+              <p className="font-mono text-xs text-accent">📱 2 Expertise Areas</p>
             </div>
             <div
               className="absolute bottom-0 right-0 glass rounded-xl px-3 py-2 animate-bounce"

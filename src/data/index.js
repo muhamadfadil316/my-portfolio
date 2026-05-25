@@ -8,7 +8,7 @@ export const profile = {
   title: 'AI Engineer',
   tagline: 'Building the future, one commit at a time.',
   bio: `Halo! Saya Muhamad Fadil, mahasiswa Teknik Informatika yang passionate di bidang web development, kecerdasan buatan, dan desain digital. Saya percaya teknologi bukan sekadar alat — ini adalah bahasa baru untuk bercerita dan menciptakan dampak nyata.`,
-  bioDetail: `Selain ngoding, saya berminat di bidang komunikasi dan aktif sebagai MC di berbagai event kampus, komunitas dan event - event lainnya. Saya suka bereksperimen dengan stack baru, mendesain antarmuka yang intuitif, dan berbagi ilmu lewat komunitas developer lokal.`,
+  bioDetail: `Selain ngoding, saya berminat di bidang komunikasi dan aktif sebagai MC di berbagai event kampus, komunitas dan event - event lainnya. Saya juga mengembangkan expertise di social media strategy dan video editing, sambil terus bereksperimen dengan stack baru, mendesain antarmuka yang intuitif, dan berbagi ilmu lewat komunitas developer lokal.`,
   email: 'dilmuh@gmail.com',
   github: 'https://github.com/muhamadfadil316',
   linkedin: 'https://linkedin.com/in/muhamadfadil',
@@ -31,26 +31,47 @@ export const techStack = [
   'Tailwind CSS', 'Python', 'PostgreSQL',
   'Figma', 'Git', 'Communication', 'Problem Solving',
 ]
-  
-export const projects = [
-  {
-    title: "Website Portfolio",
-    description: "Website portfolio modern menggunakan React.js",
-    image: "/images/projects/project1.jpg",
-    tech: ["React", "Tailwind"],
-    github: "#",
-    demo: "#",
-  },
 
+export const expertiseAreas = [
   {
-    title: "UI Dashboard",
-    description: "Dashboard admin modern dan responsive",
-    image: "/images/projects/project2.jpg",
-    tech: ["React", "Vite"],
-    github: "#",
-    demo: "#",
+    title: 'Social Media Specialist',
+    description: 'Menyusun konten, kalender posting, dan arah kampanye agar brand tetap konsisten dan engaging.',
   },
-];
+  {
+    title: 'Video Editor',
+    description: 'Menyunting video promosi dan konten digital dengan pacing yang rapi, modern, dan mudah dicerna.',
+  },
+  {
+    title: 'Communication',
+    description: 'Menyampaikan pesan dengan jelas, sopan, dan efektif dalam berbagai situasi.',
+  },
+  {
+    title: 'Socialization',
+    description: 'Mudah membangun relasi, beradaptasi dengan orang baru, dan menjaga kerja sama yang baik.',
+  },
+  {
+    title: 'Becoming Talent',
+    description: 'Terbiasa tampil, membawakan acara, dan menjaga suasana tetap hidup di depan audiens.',
+  },
+  {
+    title: 'Promoting',
+    description: 'Membantu memperkenalkan ide, acara, atau program agar lebih dikenal dan menarik perhatian.',
+  },
+  {
+    title: 'Others',
+    description: 'Fleksibel untuk belajar hal baru sesuai kebutuhan tim, acara, dan proyek yang sedang berjalan.',
+  },
+]
+
+export const awards = [
+  {
+    title: 'Best Participant',
+    issuer: 'Women in Tech - GDGOC',
+    date: '2025',
+    image: './public/award.JPEG',
+    description: 'Penghargaan Best Participant ini saya terima dari event Women in Tech sebagai bentuk apresiasi atas partisipasi aktif, semangat belajar, dan keterlibatan saya selama acara berlangsung.',
+  },
+]
 
 export const mcEvents = [
   {
@@ -100,6 +121,14 @@ export const mcEvents = [
     date: 'November 2025',
     description: 'Bertugas sebagai Moderator profesional dalam forum diskusi internasional, menjembatani dialog interaktif antar pembicara global, serta merangkum gagasan-gagasan akademis yang kompleks ke dalam bahasa yang mudah dipahami oleh audiens multinasional.',
     image: './public/ICT.jpeg',
+  },
+  {
+    id: 7,
+    title: 'Debat Rakyat Kampus',
+    event: 'Penyelenggara Acara',
+    date: 'Desember 2025',
+    description: 'Bertugas sebagai MC pada Debat Rakyat Kampus untuk menjaga alur acara, membangun suasana diskusi yang interaktif, dan memastikan setiap sesi berjalan lancar serta mudah dipahami audiens.',
+    image: './public/deras.jpeg',
   },
   {
     id: 8,
@@ -199,7 +228,8 @@ export const musicFavorites = [
 export const navLinks = [
   { label: 'Home', href: '#hero' },
   { label: 'About', href: '#about' },
-  { label: 'Portfolio', href: '#portfolio' },
+  { label: 'Expertise', href: '#expertise' },
+  { label: 'Awards', href: '#awards' },
   { label: 'Experience', href: '#experience' },
   { label: 'Hobbies', href: '#hobbies' },
   { label: 'Contact', href: '#contact' },
