@@ -173,13 +173,13 @@ export function HeroSection() {
               className="absolute top-4 -left-4 glass rounded-xl px-3 py-2 animate-bounce"
               style={{ animationDuration: "3s" }}
             >
-              <p className="font-mono text-xs text-accent">📱 2 Expertise Areas</p>
+              <p className="font-mono text-xs text-accent">2 Expertise Areas</p>
             </div>
             <div
               className="absolute bottom-0 right-0 glass rounded-xl px-3 py-2 animate-bounce"
               style={{ animationDuration: "3.5s", animationDelay: "0.5s" }}
             >
-              <p className="font-mono text-xs text-sky-400">🎙️ 20+ MC Events</p>
+              <p className="font-mono text-xs text-sky-400">20+ MC Events</p>
             </div>
           </div>
         </div>

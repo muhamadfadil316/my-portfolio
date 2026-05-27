@@ -39,7 +39,11 @@ export function AboutSection() {
               <div key={skill.name} className="glass rounded-xl p-4 hover:border-accent/30 transition-all duration-200 group">
                 <div className="flex items-center justify-between mb-2">
                   <div className="flex items-center gap-3">
-                    <span className="text-xl">{skill.icon}</span>
+                    <span
+                      className="inline-block w-8 h-8 rounded-full flex-shrink-0"
+                      style={{ background: skill.color }}
+                      aria-hidden="true"
+                    />
                     <span className="font-medium text-sm text-text">{skill.name}</span>
                   </div>
                   <span className="font-mono text-xs text-text-dim">{skill.level}%</span>

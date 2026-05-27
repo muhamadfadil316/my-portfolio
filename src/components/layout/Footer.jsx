@@ -7,7 +7,7 @@ export function Footer() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         <div>
           <p className="font-display font-bold text-lg gradient-text">{profile.nickname}<span className="text-accent">.</span></p>
-          <p className="text-text-dim text-sm mt-1">Built with React & ❤️</p>
+          <p className="text-text-dim text-sm mt-1">Built with React</p>
         </div>
         <div className="flex items-center gap-4">
           {[

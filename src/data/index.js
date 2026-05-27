@@ -18,12 +18,12 @@ export const profile = {
 }
 
 export const skills = [
-  { name: 'Frontend Development', icon: '⚡', level: 90, color: '#4F8EF7' },
-  { name: 'UI/UX Design', icon: '🎨', level: 80, color: '#7C5CF6' },
-  { name: 'Public Speaking', icon: '🎙️', level: 85, color: '#38bdf8' },
-  { name: 'Artificial Intelligence', icon: '🤖', level: 75, color: '#a78bfa' },
-  { name: 'Content Creation', icon: '✍️', level: 70, color: '#34d399' },
-  { name: 'Backend Development', icon: '🔧', level: 65, color: '#fbbf24' },
+  { name: 'Frontend Development', level: 90, color: '#4F8EF7' },
+  { name: 'UI/UX Design', level: 80, color: '#7C5CF6' },
+  { name: 'Public Speaking', level: 85, color: '#38bdf8' },
+  { name: 'Artificial Intelligence', level: 75, color: '#a78bfa' },
+  { name: 'Content Creation', level: 70, color: '#34d399' },
+  { name: 'Backend Development', level: 65, color: '#fbbf24' },
 ]
 
 export const techStack = [
@@ -206,14 +206,14 @@ export const experiences = [
 ]
 
 export const hobbies = [
-  { name: 'Community Building', icon: '🌐', desc: 'Wadah kumpul, kolaborasi, & seru-seruan bareng' }, // Pengganti Coding
-  { name: 'Desain', icon: '🎨', desc: 'Figma & motion design' },
-  { name: 'Musik', icon: '🎧', desc: 'Lo-fi, indie, electronic' },
-  { name: 'Volunteering', icon: '🤝', desc: 'Aktif di komunitas & kegiatan sosial' },
-  { name: 'Networking', icon: '☕', desc: 'Ngobrol santai & bangun relasi baru' },
-  { name: 'Public Speaking', icon: '🎙️', desc: 'Workshop & seminar' },
-  { name: 'Editing', icon: '🎬', desc: 'Video & motion graphics' },
-  { name: 'Membaca', icon: '📚', desc: 'Tech, sci-fi, self-dev' },
+  { name: 'Community Building', desc: 'Wadah kumpul, kolaborasi, & seru-seruan bareng' }, // Pengganti Coding
+  { name: 'Desain', desc: 'Figma & motion design' },
+  { name: 'Musik', desc: 'Lo-fi, indie, electronic' },
+  { name: 'Volunteering', desc: 'Aktif di komunitas & kegiatan sosial' },
+  { name: 'Networking', desc: 'Ngobrol santai & bangun relasi baru' },
+  { name: 'Public Speaking', desc: 'Workshop & seminar' },
+  { name: 'Editing', desc: 'Video & motion graphics' },
+  { name: 'Membaca', desc: 'Tech, sci-fi, self-dev' },
 ]
 
 export const musicFavorites = [

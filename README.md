@@ -1,8 +1,8 @@
-# 🚀 Personal Portfolio — React.js
+# Personal Portfolio — React.js
 
 Website portofolio pribadi modern dengan dark aesthetic, animasi halus, dan desain responsif.
 
-## ✨ Fitur
+## Fitur
 
 - **Hero Section** — Typing animation, avatar, floating cards, tech stack
 - **About Me** — Skill bars, stats, bio detail
@@ -12,7 +12,7 @@ Website portofolio pribadi modern dengan dark aesthetic, animasi halus, dan desa
 - **Hobbies** — Grid hobi + musik favorit dengan equalizer
 - **Contact** — Form + social links
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - React 18 + Vite
 - Tailwind CSS
@@ -20,7 +20,7 @@ Website portofolio pribadi modern dengan dark aesthetic, animasi halus, dan desa
 - Lucide React Icons
 - React Router DOM
 
-## 🚀 Cara Menjalankan
+## Cara Menjalankan
 
 ```bash
 # Install dependencies
@@ -35,7 +35,7 @@ npm run build
 
 Buka [http://localhost:5173](http://localhost:5173)
 
-## 📁 Struktur Folder
+## Struktur Folder
 
 ```
 src/
@@ -44,12 +44,12 @@ src/
 │   ├── sections/     # Tiap section halaman
 │   └── ui/           # Reusable UI components
 ├── data/
-│   └── index.js      # 👈 Edit semua konten di sini
+│   └── index.js      # Edit semua konten di sini
 ├── hooks/            # Custom React hooks
 └── index.css         # Global styles & CSS variables
 ```
 
-## ✏️ Cara Edit Konten
+## Cara Edit Konten
 
 Semua konten ada di **`src/data/index.js`**. Edit file tersebut untuk mengganti:
 - Nama, bio, email, social links
@@ -58,11 +58,11 @@ Semua konten ada di **`src/data/index.js`**. Edit file tersebut untuk mengganti:
 - Pengalaman & organisasi
 - Hobi & musik favorit
 
-## 🌐 Deploy ke Vercel
+## Deploy ke Vercel
 
 1. Push ke GitHub
 2. Buka [vercel.com](https://vercel.com) → Import project
 3. Framework: **Vite** (auto-detected)
-4. Deploy! ✅
+4. Deploy!
 
 > File `vercel.json` sudah disiapkan untuk routing SPA.

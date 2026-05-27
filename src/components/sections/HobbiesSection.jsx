@@ -22,7 +22,11 @@ export function HobbiesSection() {
                   key={hobby.name}
                   className="glass rounded-xl p-4 hover:border-accent/30 hover:-translate-y-0.5 transition-all duration-200 group"
                 >
-                  <span className="text-2xl mb-2 block">{hobby.icon}</span>
+                  <span
+                    className="inline-block w-8 h-8 rounded-full mb-2"
+                    style={{ background: 'rgba(255,255,255,0.04)' }}
+                    aria-hidden="true"
+                  />
                   <h3 className="font-display font-semibold text-sm text-text group-hover:text-accent transition-colors">
                     {hobby.name}
                   </h3>
@@ -51,7 +55,7 @@ export function HobbiesSection() {
                       background: `linear-gradient(135deg, hsl(${(i * 47) % 360}, 60%, 25%), hsl(${(i * 47 + 120) % 360}, 60%, 15%))`,
                     }}
                   >
-                    🎵
+                    <Music size={18} />
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="font-medium text-sm text-text truncate">{item.title}</p>

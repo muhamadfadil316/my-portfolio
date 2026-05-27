@@ -4,19 +4,19 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        display: ['Syne', 'sans-serif'],
-        body: ['DM Sans', 'sans-serif'],
+        display: ['Playfair Display', 'serif'],
+        body: ['Inter', 'sans-serif'],
         mono: ['JetBrains Mono', 'monospace'],
       },
       colors: {
-        bg: '#080C14',
-        surface: '#0D1220',
-        border: '#1a2340',
-        accent: '#4F8EF7',
-        'accent-2': '#7C5CF6',
-        muted: '#4a5568',
-        text: '#e2e8f0',
-        'text-dim': '#8892a4',
+        bg: '#0B0F14',
+        surface: '#0F1720',
+        border: '#1f2a37',
+        accent: '#5B8FB9',
+        'accent-2': '#8A6FBF',
+        muted: '#6b7280',
+        text: '#e6eef6',
+        'text-dim': '#93a0b2',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
