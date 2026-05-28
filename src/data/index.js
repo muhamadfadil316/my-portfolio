@@ -18,12 +18,12 @@ export const profile = {
 }
 
 export const skills = [
-  { name: 'Frontend Development', level: 90, color: '#4F8EF7' },
-  { name: 'UI/UX Design', level: 80, color: '#7C5CF6' },
-  { name: 'Public Speaking', level: 85, color: '#38bdf8' },
-  { name: 'Artificial Intelligence', level: 75, color: '#a78bfa' },
-  { name: 'Content Creation', level: 70, color: '#34d399' },
-  { name: 'Backend Development', level: 65, color: '#fbbf24' },
+  { name: 'Frontend Development', level: 90, color: '#8B5CF6' },
+  { name: 'UI/UX Design', level: 80, color: '#A855F7' },
+  { name: 'Public Speaking', level: 85, color: '#C084FC' },
+  { name: 'Artificial Intelligence', level: 75, color: '#DDD6FE' },
+  { name: 'Content Creation', level: 70, color: '#7C3AED' },
+  { name: 'Backend Development', level: 65, color: '#E9D5FF' },
 ]
 
 export const techStack = [
@@ -156,7 +156,7 @@ export const experiences = [
     period: '2026 — Sekarang',
     type: 'Organisasi',
     description: 'Memimpin departemen Hubungan Masyarakat, mengembangkan platform digital BEM, dan mengelola tim.',
-    color: '#4F8EF7',
+    color: '#8B5CF6',
   },
   {
     id: 2,
@@ -165,7 +165,7 @@ export const experiences = [
     period: '2025',
     type: 'Organisasi',
     description: 'Media Sosial Specialist: Meningkatkan engagement media sosial BEM sebesar 50% dalam 6 bulan dengan konten kreatif dan strategi digital.',
-    color: '#7C5CF6',
+    color: '#A855F7',
   },
   {
     id: 3,
@@ -174,7 +174,7 @@ export const experiences = [
     period: '2026 - 2028',
     type: 'Organisasi',
     description: 'Media partner dan sponsorship coordinator untuk acara tahunan Forum Genre Kabupaten Bogor dengan 500+ peserta remaja. Membangun kemitraan dengan 20+ organisasi lokal untuk mendukung acara.',
-    color: '#38bdf8',
+    color: '#C084FC',
   },
   {
     id: 4,
@@ -183,7 +183,7 @@ export const experiences = [
     period: '2023',
     type: 'Perusahaan Pemerintah',
     description: 'Mengelola surat menyurat dan administrasi logistik untuk operasional kepolisian di wilayah Bogor. Meningkatkan efisiensi proses administrasi sebesar 30% dengan sistem digitalisasi.',
-    color: '#fbbf24',
+    color: '#E9D5FF',
   },
   {
     id: 5,
@@ -192,7 +192,7 @@ export const experiences = [
     period: 'Februari 2024',
     type: 'Kepanitiaan',
     description: 'Bertugas sebagai Operator 1 KPPS pada Pemilu 2024: mengelola pendaftaran dan verifikasi pemilih di TPS, mengoperasikan perangkat pencatat suara, serta memastikan kelancaran dan keamanan pemungutan suara.',
-    color: '#34d399',
+    color: '#DDD6FE',
   },
   {
     id: 6,
@@ -201,7 +201,7 @@ export const experiences = [
     period: '2025',
     type: 'Kepanitiaan',
     description: 'Menjadi mentor pada Masa Orientasi Akademik (Ormik) 2025: membimbing mahasiswa baru, memfasilitasi sesi pengenalan kampus dan kebijakan akademik, serta membantu adaptasi kegiatan perkuliahan.',
-    color: '#a78bfa',
+    color: '#7C3AED',
   },
 ]
 

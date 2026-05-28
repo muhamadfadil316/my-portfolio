@@ -35,14 +35,14 @@ export function HeroSection() {
           style={{ animationDuration: "6s", animationDelay: "1s" }}
         />
         <div
-          className="absolute top-1/2 right-1/3 w-64 h-64 bg-sky-500/5 rounded-full blur-3xl animate-pulse"
+          className="absolute top-1/2 right-1/3 w-64 h-64 bg-purple-500/5 rounded-full blur-3xl animate-pulse"
           style={{ animationDuration: "8s", animationDelay: "2s" }}
         />
         {/* Grid overlay */}
         <div
           className="absolute inset-0 opacity-[0.03]"
           style={{
-            backgroundImage: `linear-gradient(rgba(79,142,247,1) 1px, transparent 1px), linear-gradient(90deg, rgba(79,142,247,1) 1px, transparent 1px)`,
+            backgroundImage: `linear-gradient(rgba(139,92,246,1) 1px, transparent 1px), linear-gradient(90deg, rgba(139,92,246,1) 1px, transparent 1px)`,
             backgroundSize: "60px 60px",
           }}
         />
@@ -151,7 +151,7 @@ export function HeroSection() {
           <div className="relative flex justify-center items-center">
             {/* Avatar ring */}
             <div className="relative">
-              <div className="w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-accent/30 glow-blue relative z-10">
+              <div className="w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-accent/30 glow-purple relative z-10">
                 <img
                   src="/profile.JPEG"
                   alt={profile.name}
@@ -179,7 +179,7 @@ export function HeroSection() {
               className="absolute bottom-0 right-0 glass rounded-xl px-3 py-2 animate-bounce"
               style={{ animationDuration: "3.5s", animationDelay: "0.5s" }}
             >
-              <p className="font-mono text-xs text-sky-400">20+ MC Events</p>
+              <p className="font-mono text-xs text-accent-2">20+ MC Events</p>
             </div>
           </div>
         </div>

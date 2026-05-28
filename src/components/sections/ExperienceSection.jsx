@@ -2,12 +2,12 @@ import { experiences } from '../../data'
 import { SectionWrapper, SectionTitle } from '../ui/SectionWrapper'
 
 const typeColors = {
-  Organisasi: '#4F8EF7',
-  Komunitas: '#7C5CF6',
-  Magang: '#38bdf8',
-  Prestasi: '#fbbf24',
-  Kepanitiaan: '#34d399',
-  Program: '#a78bfa',
+  Organisasi: '#8B5CF6',
+  Komunitas: '#A855F7',
+  Magang: '#C084FC',
+  Prestasi: '#E9D5FF',
+  Kepanitiaan: '#F5D0FE',
+  Program: '#7C3AED',
 }
 
 export function ExperienceSection() {
