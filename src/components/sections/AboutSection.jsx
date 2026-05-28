@@ -36,26 +36,45 @@ export function AboutSection() {
           <div className="space-y-4">
             <p className="font-mono text-xs text-accent tracking-widest uppercase mb-6">Core Skills</p>
             {skills.map((skill) => (
-              <div key={skill.name} className="glass rounded-xl p-4 hover:border-accent/30 transition-all duration-200 group">
-                <div className="flex items-center justify-between mb-2">
-                  <div className="flex items-center gap-3">
-                    <span
-                      className="inline-block w-8 h-8 rounded-full flex-shrink-0"
-                      style={{ background: skill.color }}
-                      aria-hidden="true"
-                    />
-                    <span className="font-medium text-sm text-text">{skill.name}</span>
+              <div
+                key={skill.name}
+                className="glass group relative overflow-hidden rounded-2xl border border-white/5 p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/20"
+                style={{ boxShadow: `inset 0 1px 0 rgba(255,255,255,0.03), 0 0 0 1px ${skill.color}14, 0 16px 40px rgba(0,0,0,0.18)` }}
+              >
+                <div
+                  className="pointer-events-none absolute inset-x-0 top-0 h-px opacity-70"
+                  style={{ background: `linear-gradient(90deg, transparent, ${skill.color}, transparent)` }}
+                  aria-hidden="true"
+                />
+
+                <div className="flex items-start justify-between gap-4 mb-3">
+                  <div className="space-y-1">
+                    <span className="block font-medium text-sm text-text tracking-wide">{skill.name}</span>
+                    <span className="block text-[11px] uppercase tracking-[0.24em] text-text-dim">Capability</span>
                   </div>
-                  <span className="font-mono text-xs text-text-dim">{skill.level}%</span>
+                  <span
+                    className="shrink-0 rounded-full border border-white/10 bg-white/5 px-3 py-1 font-mono text-xs text-text-dim"
+                    style={{ boxShadow: `0 0 18px ${skill.color}12` }}
+                  >
+                    {skill.level}%
+                  </span>
                 </div>
-                <div className="h-1.5 bg-border rounded-full overflow-hidden">
+
+                <div className="relative h-2 overflow-hidden rounded-full bg-white/5">
                   <div
-                    className="h-full rounded-full transition-all duration-1000 group-hover:opacity-100"
+                    className="relative h-full rounded-full transition-all duration-1000 group-hover:opacity-100"
                     style={{
                       width: `${skill.level}%`,
-                      background: `linear-gradient(90deg, ${skill.color}, ${skill.color}99)`,
+                      background: `linear-gradient(90deg, ${skill.color}CC 0%, ${skill.color} 100%)`,
+                      boxShadow: `0 0 18px ${skill.color}66`,
                     }}
-                  />
+                  >
+                    <span
+                      className="absolute right-0 top-1/2 h-3 w-3 -translate-y-1/2 translate-x-1/2 rounded-full border border-white/30 bg-white/70 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                      style={{ boxShadow: `0 0 12px ${skill.color}88` }}
+                      aria-hidden="true"
+                    />
+                  </div>
                 </div>
               </div>
             ))}
