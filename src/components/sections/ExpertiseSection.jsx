@@ -13,7 +13,7 @@ export function ExpertiseSection() {
 
         <div className="grid md:grid-cols-2 gap-6">
           {expertiseAreas.map((item) => (
-            <div key={item.title} className="glass rounded-2xl p-6 hover:border-accent/30 hover:-translate-y-1 transition-all duration-300 group">
+            <div key={item.title} className="glass rounded-2xl p-6 border border-border/60 bg-surface/35 hover:border-accent/30 hover:-translate-y-1 transition-all duration-300 group">
               <h3 className="font-display font-semibold text-lg text-text group-hover:text-accent transition-colors mb-3">
                 {item.title}
               </h3>

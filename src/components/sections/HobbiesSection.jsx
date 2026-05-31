@@ -3,6 +3,8 @@ import { SectionWrapper, SectionTitle } from '../ui/SectionWrapper'
 import { Music } from 'lucide-react'
 
 export function HobbiesSection() {
+  const equalizerHeights = [28, 56, 42, 68, 34, 78, 48, 60, 32, 72, 38, 54, 66, 44, 58, 76, 36, 62, 40, 50]
+
   return (
     <SectionWrapper id="hobbies" className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
@@ -15,18 +17,14 @@ export function HobbiesSection() {
         <div className="grid md:grid-cols-2 gap-12">
           {/* Hobbies grid */}
           <div>
-            <p className="font-mono text-xs text-accent tracking-widest uppercase mb-6">Aktivitas & Hobi</p>
+            <p className="font-mono text-xs text-accent tracking-[0.3em] uppercase mb-6">Aktivitas & Hobi</p>
             <div className="grid grid-cols-2 gap-3">
               {hobbies.map((hobby) => (
                 <div
                   key={hobby.name}
-                  className="glass rounded-xl p-4 hover:border-accent/30 hover:-translate-y-0.5 transition-all duration-200 group"
+                  className="glass rounded-xl p-4 border border-border/60 bg-surface/35 hover:border-accent/30 hover:-translate-y-0.5 transition-all duration-200 group"
                 >
-                  <span
-                    className="inline-block w-8 h-8 rounded-full mb-2"
-                    style={{ background: 'rgba(255,255,255,0.04)' }}
-                    aria-hidden="true"
-                  />
+                  <div className="mb-3 h-px w-10 bg-gradient-to-r from-accent/70 to-transparent" aria-hidden="true" />
                   <h3 className="font-display font-semibold text-sm text-text group-hover:text-accent transition-colors">
                     {hobby.name}
                   </h3>
@@ -46,7 +44,7 @@ export function HobbiesSection() {
               {musicFavorites.map((item, i) => (
                 <div
                   key={i}
-                  className="glass rounded-xl p-4 flex items-center gap-4 hover:border-accent/30 hover:translate-x-1 transition-all duration-200 group"
+                  className="glass rounded-xl p-4 flex items-center gap-4 border border-border/60 bg-surface/35 hover:border-accent/30 hover:translate-x-1 transition-all duration-200 group"
                 >
                   {/* Fake album art */}
                   <div
@@ -75,14 +73,13 @@ export function HobbiesSection() {
 
             {/* Equalizer bars decoration */}
             <div className="mt-6 flex items-end gap-1 h-8">
-              {Array.from({ length: 20 }).map((_, i) => (
+              {equalizerHeights.map((height, i) => (
                 <div
                   key={i}
-                  className="flex-1 rounded-sm bg-accent/40 animate-pulse"
+                  className="flex-1 rounded-sm bg-gradient-to-t from-accent/30 to-accent/70"
                   style={{
-                    height: `${Math.random() * 100}%`,
+                    height: `${height}%`,
                     animationDelay: `${i * 0.05}s`,
-                    animationDuration: `${0.8 + Math.random() * 0.8}s`,
                   }}
                 />
               ))}

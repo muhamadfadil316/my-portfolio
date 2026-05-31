@@ -24,7 +24,7 @@ export function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'py-3 bg-bg/80 backdrop-blur-xl border-b border-border/60'
+          ? 'py-3 bg-bg/78 backdrop-blur-xl border-b border-border/70 shadow-[0_10px_30px_rgba(0,0,0,0.18)]'
           : 'py-5 bg-transparent'
       }`}
     >
@@ -33,7 +33,7 @@ export function Navbar() {
         <a
           href="#hero"
           onClick={(e) => { e.preventDefault(); handleNavClick('#hero') }}
-          className="font-display font-bold text-xl tracking-tight gradient-text"
+          className="font-display font-semibold text-xl tracking-tight gradient-text"
         >
           {profile.nickname}<span className="text-accent">.</span>
         </a>
@@ -48,11 +48,11 @@ export function Navbar() {
                 <button
                   onClick={() => handleNavClick(link.href)}
                   className={`relative px-4 py-2 text-sm font-body transition-colors duration-200 rounded-lg ${
-                    isActive ? 'text-accent' : 'text-text-dim hover:text-text'
+                    isActive ? 'text-text' : 'text-text-dim hover:text-text'
                   }`}
                 >
                   {isActive && (
-                    <span className="absolute inset-0 bg-accent/10 rounded-lg" />
+                    <span className="absolute inset-x-3 -bottom-0.5 h-px bg-gradient-to-r from-accent to-accent-2 rounded-full" />
                   )}
                   {link.label}
                 </button>
@@ -64,13 +64,9 @@ export function Navbar() {
         {/* CTA */}
         <a
           href={`mailto:${profile.email}`}
-          className="hidden md:flex items-center gap-2 px-4 py-2 bg-accent/10 border border-accent/30 text-accent text-sm font-medium rounded-lg hover:bg-accent/20 transition-all duration-200"
+          className="hidden md:flex items-center gap-2 px-4 py-2 bg-accent/10 border border-accent/25 text-accent text-sm font-medium rounded-full hover:bg-accent/15 transition-all duration-200"
         >
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-accent" />
-          </span>
-          Available for work
+          Open for select work
         </a>
 
         {/* Mobile menu toggle */}
@@ -85,7 +81,7 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-bg/95 backdrop-blur-xl border-b border-border/60 py-4 px-6">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-bg/95 backdrop-blur-xl border-b border-border/70 py-4 px-6">
           <ul className="flex flex-col gap-1">
             {navLinks.map((link) => (
               <li key={link.href}>

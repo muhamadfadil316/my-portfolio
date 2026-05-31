@@ -24,7 +24,7 @@ export function AboutSection() {
                 { label: 'Organisasi', value: '2' },
                 { label: 'Cups of Coffee', value: '∞' },
               ].map((stat) => (
-                <div key={stat.label} className="glass rounded-xl p-4">
+                <div key={stat.label} className="glass rounded-xl p-4 border border-border/60 bg-surface/50 shadow-[0_12px_30px_rgba(0,0,0,0.12)]">
                   <p className="font-display font-bold text-2xl gradient-text">{stat.value}</p>
                   <p className="text-text-dim text-sm mt-1">{stat.label}</p>
                 </div>
@@ -34,11 +34,11 @@ export function AboutSection() {
 
           {/* Right — skills */}
           <div className="space-y-4">
-            <p className="font-mono text-xs text-accent tracking-widest uppercase mb-6">Core Skills</p>
+            <p className="font-mono text-xs text-accent tracking-[0.3em] uppercase mb-6">Core Skills</p>
             {skills.map((skill) => (
               <div
                 key={skill.name}
-                className="glass group relative overflow-hidden rounded-2xl border border-white/5 p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/20"
+                className="glass group relative overflow-hidden rounded-2xl border border-border/60 bg-surface/35 p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/25"
                 style={{ boxShadow: `inset 0 1px 0 rgba(255,255,255,0.03), 0 0 0 1px ${skill.color}14, 0 16px 40px rgba(0,0,0,0.18)` }}
               >
                 <div

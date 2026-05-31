@@ -7,10 +7,10 @@ export function ContactSection() {
   const [copied, setCopied] = useState(null)
 
   const socials = [
-    { icon: <Mail size={20} />, label: 'Email', value: profile.email, href: `mailto:${profile.email}`, color: '#8B5CF6' },
-    { icon: <Github size={20} />, label: 'GitHub', value: '@muhamadfadil316', href: profile.github, color: '#e2e8f0' },
-    { icon: <Linkedin size={20} />, label: 'LinkedIn', value: 'Muhamad Fadil', href: profile.linkedin, color: '#A855F7' },
-    { icon: <Instagram size={20} />, label: 'Instagram', value: '@fadilorsy', href: profile.instagram, color: '#e1306c' },
+    { icon: <Mail size={20} />, label: 'Email', value: profile.email, href: `mailto:${profile.email}`, color: '#4F8CFF' },
+    { icon: <Github size={20} />, label: 'GitHub', value: '@muhamadfadil316', href: profile.github, color: '#D7E2EE' },
+    { icon: <Linkedin size={20} />, label: 'LinkedIn', value: 'Muhamad Fadil', href: profile.linkedin, color: '#5AAEFA' },
+    { icon: <Instagram size={20} />, label: 'Instagram', value: '@fadilorsy', href: profile.instagram, color: '#8FD5E8' },
   ]
 
   return (
@@ -24,7 +24,7 @@ export function ContactSection() {
 
         <div className="grid gap-12">
           <div className="space-y-4">
-            <div className="glass rounded-2xl p-6 mb-6">
+            <div className="glass rounded-2xl p-6 mb-6 border border-border/60 bg-surface/35">
               <div className="flex items-center gap-3 mb-4">
                 <MapPin size={16} className="text-accent" />
                 <span className="text-text-dim text-sm">{profile.location}</span>
@@ -36,7 +36,7 @@ export function ContactSection() {
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
                         <span className="relative inline-flex rounded-full h-2 w-2 bg-green-400" />
                       </span>
-                      <span className="text-green-400 text-xs font-mono">Available for work</span>
+                      <span className="text-green-400 text-xs font-mono">Available for select work</span>
                     </span>
                   </>
                 )}
@@ -49,11 +49,11 @@ export function ContactSection() {
             {socials.map((s) => (
               <div
                 key={s.label}
-                className="flex items-center justify-between glass rounded-xl p-4 hover:border-accent/30 hover:translate-x-1 transition-all duration-200 group"
+                className="flex items-center justify-between glass rounded-xl p-4 border border-border/60 bg-surface/30 hover:border-accent/30 hover:translate-x-1 transition-all duration-200 group"
               >
                 <div className="flex items-center gap-4">
                   <div
-                    className="p-2.5 rounded-lg transition-colors"
+                    className="p-2.5 rounded-lg transition-colors border border-white/5"
                     style={{ background: `${s.color}15`, color: s.color }}
                   >
                     {s.icon}

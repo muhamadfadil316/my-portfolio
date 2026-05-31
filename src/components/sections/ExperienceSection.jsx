@@ -2,12 +2,12 @@ import { experiences } from '../../data'
 import { SectionWrapper, SectionTitle } from '../ui/SectionWrapper'
 
 const typeColors = {
-  Organisasi: '#8B5CF6',
-  Komunitas: '#A855F7',
-  Magang: '#C084FC',
-  Prestasi: '#E9D5FF',
-  Kepanitiaan: '#F5D0FE',
-  Program: '#7C3AED',
+  Organisasi: '#4F8CFF',
+  Komunitas: '#5AAEFA',
+  Magang: '#6BCBFF',
+  Prestasi: '#8FD5E8',
+  Kepanitiaan: '#A6C8FF',
+  Program: '#7EA1C4',
 }
 
 export function ExperienceSection() {
@@ -36,7 +36,7 @@ export function ExperienceSection() {
                 </div>
 
                 {/* Content */}
-                <div className="flex-1 glass rounded-xl p-5 hover:border-accent/20 transition-all duration-300 group-hover:-translate-x-0">
+                <div className="flex-1 glass rounded-xl p-5 border border-border/60 bg-surface/35 hover:border-accent/20 transition-all duration-300 group-hover:-translate-x-0">
                   <div className="flex flex-wrap items-start justify-between gap-2 mb-2">
                     <div>
                       <h3 className="font-display font-semibold text-base text-text">{exp.role}</h3>

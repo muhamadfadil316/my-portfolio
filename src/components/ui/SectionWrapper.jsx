@@ -7,7 +7,7 @@ export function SectionWrapper({ id, children, className = '' }) {
     <section
       id={id}
       ref={ref}
-      className={`transition-all duration-700 ${
+      className={`transition-all duration-600 ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
       } ${className}`}
     >
@@ -18,15 +18,18 @@ export function SectionWrapper({ id, children, className = '' }) {
 
 export function SectionTitle({ label, title, subtitle }) {
   return (
-    <div className="mb-12">
-      <p className="font-mono text-xs text-accent tracking-widest uppercase mb-3">
-        — {label}
-      </p>
-      <h2 className="font-display font-bold text-3xl md:text-4xl text-text mb-3">
+    <div className="mb-12 max-w-3xl">
+      <div className="flex items-center gap-3 mb-4">
+        <span className="h-px w-8 bg-gradient-to-r from-accent to-accent-2" />
+        <p className="font-mono text-xs text-accent tracking-[0.35em] uppercase">
+          {label}
+        </p>
+      </div>
+      <h2 className="font-display font-semibold text-3xl md:text-4xl lg:text-5xl tracking-tight text-text mb-3">
         {title}
       </h2>
       {subtitle && (
-        <p className="text-text-dim text-base max-w-xl">{subtitle}</p>
+        <p className="text-text-dim text-base leading-relaxed max-w-2xl">{subtitle}</p>
       )}
     </div>
   )

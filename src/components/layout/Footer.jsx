@@ -3,11 +3,11 @@ import { profile } from "../../data";
 
 export function Footer() {
   return (
-    <footer className="border-t border-border/50 py-10 px-6">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+    <footer className="border-t border-border/60 py-10 px-6">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-5">
         <div>
-          <p className="font-display font-bold text-lg gradient-text">{profile.nickname}<span className="text-accent">.</span></p>
-          <p className="text-text-dim text-sm mt-1">Built with React</p>
+          <p className="font-display font-semibold text-lg gradient-text">{profile.nickname}<span className="text-accent">.</span></p>
+          <p className="text-text-dim text-sm mt-1">Focused on clean systems and measurable impact.</p>
         </div>
         <div className="flex items-center gap-4">
           {[
@@ -27,7 +27,7 @@ export function Footer() {
             </a>
           ))}
         </div>
-        <p className="text-text-dim text-xs">© {new Date().getFullYear()} {profile.name}. All rights reserved.</p>
+        <p className="text-text-dim text-xs text-center md:text-right">© {new Date().getFullYear()} {profile.name}. All rights reserved.</p>
       </div>
     </footer>
   )

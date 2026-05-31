@@ -14,7 +14,7 @@ export function AwardsSection() {
 
         <div className="grid gap-6">
           {awards.map((award) => (
-            <div key={award.title} className="glass rounded-2xl p-6 border border-accent/15 hover:border-accent/30 transition-all duration-300">
+            <div key={award.title} className="glass rounded-2xl p-6 border border-border/60 bg-surface/35 hover:border-accent/30 transition-all duration-300 shadow-[0_18px_45px_rgba(0,0,0,0.16)]">
               <div className="relative h-80 md:h-[30rem] mb-5 overflow-hidden rounded-xl border border-border/60">
                 <img
                   src={award.image}

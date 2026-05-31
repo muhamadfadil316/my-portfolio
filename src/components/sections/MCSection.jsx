@@ -11,7 +11,7 @@ function Modal({ event, onClose }) {
       onClick={onClose}
     >
       <div
-        className="glass rounded-2xl overflow-hidden max-w-lg w-full shadow-2xl"
+        className="glass rounded-2xl overflow-hidden max-w-lg w-full shadow-2xl border border-border/60 bg-surface/35"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="relative h-64">
@@ -19,7 +19,7 @@ function Modal({ event, onClose }) {
           <div className="absolute inset-0 bg-gradient-to-t from-bg to-transparent" />
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 p-2 bg-bg/60 text-text hover:bg-bg rounded-full transition-colors"
+            className="absolute top-4 right-4 p-2 bg-bg/70 text-text hover:bg-bg rounded-full transition-colors border border-border/60"
           >
             <X size={18} />
           </button>
@@ -58,7 +58,7 @@ export function MCSection() {
             {mcEvents.map((event) => (
               <div
                 key={event.id}
-                className="glass rounded-2xl overflow-hidden cursor-pointer group hover:border-accent/30 hover:-translate-y-1 transition-all duration-300"
+                className="glass rounded-2xl overflow-hidden cursor-pointer group border border-border/60 bg-surface/35 hover:border-accent/30 hover:-translate-y-1 transition-all duration-300"
                 onClick={() => setSelectedEvent(event)}
               >
                 <div className="relative overflow-hidden h-48">
@@ -69,7 +69,7 @@ export function MCSection() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/40 to-transparent" />
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="p-3 bg-accent/20 backdrop-blur-sm border border-accent/40 rounded-full">
+                    <div className="p-3 bg-accent/15 backdrop-blur-sm border border-accent/30 rounded-full">
                       <Mic size={20} className="text-accent" />
                     </div>
                   </div>
