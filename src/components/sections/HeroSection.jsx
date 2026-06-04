@@ -151,7 +151,7 @@ export function HeroSection() {
 
             <div className="absolute top-0 left-0 z-20 -translate-x-10 translate-y-6 glass rounded-2xl px-4 py-3 max-w-56 border border-border/70 shadow-[0_16px_40px_rgba(0,0,0,0.22)]">
               <p className="font-mono text-[11px] tracking-[0.2em] uppercase text-text-dim">Focus</p>
-              <p className="mt-1 text-sm text-text">AI, web, media, and communication</p>
+              <p className="mt-1 text-sm text-text">AI, web, media</p>
             </div>
 
             <div className="absolute bottom-0 right-0 z-20 translate-x-10 -translate-y-4 glass rounded-2xl px-4 py-3 max-w-48 border border-border/70 shadow-[0_16px_40px_rgba(0,0,0,0.22)]">
