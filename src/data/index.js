@@ -73,6 +73,69 @@ export const awards = [
   },
 ]
 
+// ------------------------------------------------------------
+// PROJECTS — Proyek yang pernah saya buat
+// Kartu proyek menampilkan deskripsi saja (tanpa gambar).
+// Cara menambah proyek baru: copy salah satu objek di bawah,
+// lalu ubah isinya sesuai kebutuhan.
+// ------------------------------------------------------------
+export const projects = [
+  {
+    id: 1,
+    title: 'Website Undangan Pernikahan',
+    category: 'Pemrograman Web 1',
+    date: '2024',
+    description: 'Membuat website undangan pernikahan digital yang elegan dan responsif sebagai proyek individu pada mata kuliah Pemrograman Web 1.',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    link: '',
+  },
+  {
+    id: 2,
+    title: 'Website UMKM Daerah Depok',
+    category: 'Pemrograman Web 2',
+    date: '2024',
+    description: 'Mengembangkan website untuk mendukung UMKM daerah Depok agar lebih dikenal secara online. Proyek tim pada mata kuliah Pemrograman Web 2.',
+    tech: ['PHP', 'MySQL', 'Bootstrap'],
+    link: '',
+  },
+  {
+    id: 3,
+    title: 'Web Sistem Kasir Toko',
+    category: 'Pemrograman Berorientasi Objek',
+    date: '2024',
+    description: 'Membangun sistem kasir (point of sale) berbasis web untuk mengelola transaksi dan stok toko. Proyek tim pada mata kuliah Pemrograman Berorientasi Objek.',
+    tech: ['Java', 'OOP', 'MySQL'],
+    link: '',
+  },
+  {
+    id: 4,
+    title: 'Website Jasa Hosting',
+    category: 'Kewirausahaan',
+    date: '2025',
+    description: 'Merancang website penyedia jasa hosting sebagai bentuk produk bisnis digital. Proyek tim pada mata kuliah Kewirausahaan.',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    link: '',
+  },
+  {
+    id: 5,
+    title: 'Website Healthy Scan',
+    category: 'Aplikasi',
+    date: '2025',
+    description: 'Mengembangkan aplikasi Healthy Scan untuk memindai dan menganalisis komposisi makanan. Dikembangkan bersama tim.',
+    tech: ['React.js', 'AI', 'API'],
+    link: '',
+  },
+  {
+    id: 6,
+    title: 'Prediksi Kepadatan TPS',
+    category: 'Data Mining',
+    date: '2025',
+    description: 'Membuat model prediksi apakah TPS penuh atau tidak penuh menggunakan algoritma Random Forest dan Decision Tree. Proyek pada mata kuliah Data Mining.',
+    tech: ['Python', 'Random Forest', 'Decision Tree'],
+    link: '',
+  },
+]
+
 export const mcEvents = [
   {
     id: 1,
@@ -230,6 +293,7 @@ export const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'Expertise', href: '#expertise' },
   { label: 'Awards', href: '#awards' },
+  { label: 'Projects', href: '#projects' },
   { label: 'Experience', href: '#experience' },
   { label: 'Hobbies', href: '#hobbies' },
   { label: 'Contact', href: '#contact' },
