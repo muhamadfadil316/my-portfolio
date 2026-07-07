@@ -5,24 +5,37 @@ import { SectionWrapper, SectionTitle } from '../ui/SectionWrapper'
 export function AwardsSection() {
   return (
     <SectionWrapper id="awards" className="py-24 px-6">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <SectionTitle
           label="Awards"
           title="PENGHARGAAN"
-          subtitle="Ruang khusus untuk satu award utama agar mudah dipresentasikan di portofolio."
+          subtitle="Kumpulan penghargaan yang saya terima selama mengikuti kegiatan dan perkuliahan."
         />
 
-        <div className="grid gap-6">
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {awards.map((award) => (
-            <div key={award.title} className="glass rounded-2xl p-6 border border-border/60 bg-surface/35 hover:border-accent/30 transition-all duration-300 shadow-[0_18px_45px_rgba(0,0,0,0.16)]">
-              <div className="relative h-80 md:h-[30rem] mb-5 overflow-hidden rounded-xl border border-border/60">
-                <img
-                  src={award.image}
-                  alt={award.title}
-                  className="w-full h-full object-cover"
-                  style={{ objectPosition: '50% 28%' }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/30 to-transparent" />
+            <div key={`${award.title}-${award.issuer}`} className="glass h-full rounded-2xl p-6 border border-border/60 bg-surface/35 hover:border-accent/30 transition-all duration-300 shadow-[0_18px_45px_rgba(0,0,0,0.16)] flex flex-col">
+              <div className="relative h-72 mb-5 overflow-hidden rounded-xl border border-border/60 bg-bg/60">
+                {award.image ? (
+                  <>
+                    <img
+                      src={award.image}
+                      alt={award.title}
+                      className="w-full h-full object-cover"
+                      style={{ objectPosition: award.imagePosition || '50% 28%' }}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/30 to-transparent" />
+                  </>
+                ) : (
+                  <div className="absolute inset-0 flex items-center justify-center px-6 text-center bg-gradient-to-br from-surface/50 via-bg/40 to-bg">
+                    <div>
+                      <div className="mx-auto mb-3 w-14 h-14 rounded-2xl border border-border/60 bg-bg/70 flex items-center justify-center text-accent font-mono text-xs tracking-[0.2em]">
+                        IMG
+                      </div>
+                      <p className="text-sm text-text-dim">Gambar belum diisi</p>
+                    </div>
+                  </div>
+                )}
                 <div className="absolute top-3 left-3 px-2 py-1 rounded-full bg-bg/70 backdrop-blur-sm border border-border/60 text-xs font-mono text-text-dim">
                   {award.date}
                 </div>
@@ -44,7 +57,7 @@ export function AwardsSection() {
                 </span>
               </div>
 
-              <p className="text-text-dim text-sm leading-relaxed mt-5">
+              <p className="text-text-dim text-sm leading-relaxed mt-5 flex-1">
                 {award.description}
               </p>
             </div>

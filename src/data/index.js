@@ -71,6 +71,21 @@ export const awards = [
     image: '/award.jpeg',
     description: 'Penghargaan Best Participant ini saya terima dari event Women in Tech sebagai bentuk apresiasi atas partisipasi aktif, semangat belajar, dan keterlibatan saya selama acara berlangsung.',
   },
+  {
+    title: 'Mahasiswa Terbaik',
+    issuer: 'Mata Kuliah Artificial Intelligence',
+    date: '2026',
+    image: '/AI.jfif',
+    imagePosition: '50% 46%',
+    description: 'Penghargaan ini saya terima sebagai mahasiswa terbaik pada mata kuliah Artificial Intelligence atas hasil belajar, konsistensi, dan kontribusi selama perkuliahan.',
+  },
+  {
+    title: 'Mahasiswa Terbaik',
+    issuer: 'Mata Kuliah Manajemen Project',
+    date: '2026',
+    image: '/Manpro.jfif',
+    description: 'Penghargaan ini saya terima sebagai mahasiswa terbaik pada mata kuliah Manajemen Project sebagai apresiasi atas pemahaman materi, kedisiplinan, dan penyelesaian tugas dengan baik.',
+  },
 ]
 
 // ------------------------------------------------------------
