@@ -156,7 +156,7 @@ export function HeroSection() {
 
             <div className="absolute bottom-0 right-0 z-20 translate-x-10 -translate-y-4 glass rounded-2xl px-4 py-3 max-w-48 border border-border/70 shadow-[0_16px_40px_rgba(0,0,0,0.22)]">
               <p className="font-mono text-[11px] tracking-[0.2em] uppercase text-text-dim">Impact</p>
-              <p className="mt-1 text-sm text-text">20+ hosted events</p>
+              <p className="mt-1 text-sm text-text">50+ MC events</p>
             </div>
           </div>
         </div>

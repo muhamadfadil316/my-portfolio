@@ -8,7 +8,7 @@ export const profile = {
   title: 'AI Engineer',
   tagline: 'Building the future, one commit at a time.',
   bio: `Halo! Saya Muhamad Fadil, mahasiswa Teknik Informatika yang passionate di bidang web development, kecerdasan buatan, dan desain digital. Saya percaya teknologi bukan sekadar alat — ini adalah bahasa baru untuk bercerita dan menciptakan dampak nyata.`,
-  bioDetail: `Selain ngoding, saya berminat di bidang komunikasi dan aktif sebagai MC di berbagai event kampus, komunitas dan event - event lainnya. Saya juga mengembangkan expertise di social media strategy dan video editing, sambil terus bereksperimen dengan stack baru, mendesain antarmuka yang intuitif, dan berbagi ilmu lewat komunitas developer lokal.`,
+  bioDetail: `Selain ngoding, saya berminat di bidang komunikasi dan aktif sebagai MC di berbagai event kampus, komunitas, training, dan acara lainnya. Saat ini saya sudah memiliki pengalaman memandu 50+ event sebagai MC. Saya juga mengembangkan expertise di social media strategy dan video editing, sambil terus bereksperimen dengan stack baru, mendesain antarmuka yang intuitif, dan berbagi ilmu lewat komunitas developer lokal.`,
   email: 'dilmuh@gmail.com',
   github: 'https://github.com/muhamadfadil316',
   linkedin: 'https://linkedin.com/in/muhamadfadil',
