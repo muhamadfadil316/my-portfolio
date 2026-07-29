@@ -281,6 +281,15 @@ export const experiences = [
     description: 'Menjadi mentor pada Masa Orientasi Akademik (Ormik) 2025: membimbing mahasiswa baru, memfasilitasi sesi pengenalan kampus dan kebijakan akademik, serta membantu adaptasi kegiatan perkuliahan.',
     color: '#A6C8FF',
   },
+  {
+    id: 7,
+    role: 'Staff Event Ormik Aruna',
+    org: 'Aruna 2026',
+    period: '2026',
+    type: 'Kepanitiaan',
+    description: 'Bertugas sebagai staff event dalam Ormik Aruna 2026 dengan fokus menyusun rundown acara, merancang konsep kegiatan, dan memastikan alur pelaksanaan berjalan rapi, terkoordinasi, dan sesuai kebutuhan acara.',
+    color: '#7EA1C4',
+  },
 ]
 
 export const hobbies = [
