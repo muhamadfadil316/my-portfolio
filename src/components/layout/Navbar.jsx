@@ -24,7 +24,7 @@ export function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'py-3 bg-bg/78 backdrop-blur-xl border-b border-border/70 shadow-[0_10px_30px_rgba(0,0,0,0.18)]'
+          ? 'py-3 bg-bg/82 backdrop-blur-xl border-b border-border/70 shadow-[0_14px_36px_rgba(2,8,18,0.28)]'
           : 'py-5 bg-transparent'
       }`}
     >
@@ -64,9 +64,9 @@ export function Navbar() {
         {/* CTA */}
         <a
           href={`mailto:${profile.email}`}
-          className="hidden md:flex items-center gap-2 px-4 py-2 bg-accent/10 border border-accent/25 text-accent text-sm font-medium rounded-full hover:bg-accent/15 transition-all duration-200"
+          className="hidden md:flex items-center gap-2 px-4 py-2 bg-accent/8 border border-accent/20 text-accent text-sm font-medium rounded-full hover:bg-accent/14 hover:border-accent/30 transition-all duration-200"
         >
-          Open for select work
+          Open for opportunities
         </a>
 
         {/* Mobile menu toggle */}
@@ -81,13 +81,13 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-bg/95 backdrop-blur-xl border-b border-border/70 py-4 px-6">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-bg/96 backdrop-blur-xl border-b border-border/70 py-4 px-6">
           <ul className="flex flex-col gap-1">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <button
                   onClick={() => handleNavClick(link.href)}
-                  className="w-full text-left px-4 py-3 text-sm text-text-dim hover:text-text hover:bg-surface rounded-lg transition-all"
+                  className="w-full text-left px-4 py-3 text-sm text-text-dim hover:text-text hover:bg-surface/80 rounded-lg transition-all"
                 >
                   {link.label}
                 </button>

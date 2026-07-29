@@ -4,19 +4,19 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        display: ['Sora', 'sans-serif'],
+        display: ['Plus Jakarta Sans', 'sans-serif'],
         body: ['Manrope', 'sans-serif'],
         mono: ['IBM Plex Mono', 'monospace'],
       },
       colors: {
-        bg: '#07111D',
-        surface: '#0F1A28',
-        border: '#233247',
-        accent: '#4F8CFF',
-        'accent-2': '#88D8FF',
-        muted: '#708096',
-        text: '#EAF1F8',
-        'text-dim': '#9BA8B8',
+        bg: '#08101A',
+        surface: '#111C2A',
+        border: '#273646',
+        accent: '#4C82F7',
+        'accent-2': '#9EC0F5',
+        muted: '#73839A',
+        text: '#E8EEF5',
+        'text-dim': '#A0ADBB',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
