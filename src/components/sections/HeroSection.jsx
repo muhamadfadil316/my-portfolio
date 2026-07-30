@@ -36,10 +36,10 @@ export function HeroSection() {
           style={{ animationDuration: "8s", animationDelay: "2s" }}
         />
         <div
-          className="absolute inset-0 opacity-[0.04]"
+          className="absolute inset-0 opacity-[0.03]"
           style={{
             backgroundImage:
-              "linear-gradient(rgba(79,140,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(79,140,255,1) 1px, transparent 1px)",
+              "linear-gradient(rgba(108,146,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(108,146,255,1) 1px, transparent 1px)",
             backgroundSize: "60px 60px",
           }}
         />
