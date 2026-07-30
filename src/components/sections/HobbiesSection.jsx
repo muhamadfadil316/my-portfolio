@@ -1,6 +1,6 @@
 import { hobbies, musicFavorites } from '../../data'
 import { SectionWrapper, SectionTitle } from '../ui/SectionWrapper'
-import { Music } from 'lucide-react'
+import { Disc3, Music2 } from 'lucide-react'
 
 export function HobbiesSection() {
   const equalizerHeights = [28, 56, 42, 68, 34, 78, 48, 60, 32, 72, 38, 54, 66, 44, 58, 76, 36, 62, 40, 50]
@@ -37,7 +37,7 @@ export function HobbiesSection() {
           {/* Music */}
           <div>
             <div className="flex items-center gap-2 mb-6">
-              <Music size={14} className="text-accent" />
+              <Disc3 size={15} className="text-accent" />
               <p className="font-mono text-xs text-accent tracking-widest uppercase">Musik Favorit</p>
             </div>
             <div className="space-y-3">
@@ -46,14 +46,25 @@ export function HobbiesSection() {
                   key={i}
                   className="glass rounded-xl p-4 flex items-center gap-4 border border-border/60 bg-surface/35 hover:border-accent/30 hover:translate-x-1 transition-all duration-200 group"
                 >
-                  {/* Fake album art */}
                   <div
-                    className="w-12 h-12 rounded-lg flex-shrink-0 flex items-center justify-center text-xl"
+                    className="relative w-14 h-14 rounded-2xl overflow-hidden flex-shrink-0 border border-white/10 shadow-[0_16px_32px_rgba(0,0,0,0.28)]"
                     style={{
-                      background: `linear-gradient(135deg, hsl(${(i * 47) % 360}, 60%, 25%), hsl(${(i * 47 + 120) % 360}, 60%, 15%))`,
+                      background: `linear-gradient(135deg, hsl(${(i * 47) % 360}, 42%, 24%), hsl(${(i * 47 + 120) % 360}, 36%, 12%))`,
                     }}
                   >
-                    <Music size={18} />
+                    <div
+                      className="absolute inset-0 opacity-70"
+                      style={{
+                        background:
+                          'radial-gradient(circle at 30% 28%, rgba(255,255,255,0.18), transparent 34%), radial-gradient(circle at 70% 78%, rgba(255,255,255,0.06), transparent 38%)',
+                      }}
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="flex h-9 w-9 items-center justify-center rounded-full border border-white/12 bg-white/6 backdrop-blur-sm shadow-[inset_0_1px_0_rgba(255,255,255,0.18)]">
+                        <Music2 size={18} className="text-white/90 drop-shadow-[0_1px_1px_rgba(0,0,0,0.35)]" />
+                      </div>
+                    </div>
+                    <div className="absolute -right-1 -top-1 h-5 w-5 rounded-full bg-white/10 blur-[1px]" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="font-medium text-sm text-text truncate">{item.title}</p>
