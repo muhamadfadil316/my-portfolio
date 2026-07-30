@@ -3,8 +3,8 @@
 @import "tailwindcss/utilities";
 
 :root {
-  --accent: #6C92FF;
-  --accent-2: #C7D5EA;
+  --accent: #6F84A8;
+  --accent-2: #D6DEE8;
 }
 
 * {
@@ -18,13 +18,13 @@ html {
 }
 
 body {
-  background-color: #060B12;
+  background-color: #03070C;
   background-image:
-    radial-gradient(circle at top, rgba(108, 146, 255, 0.10), transparent 26%),
-    radial-gradient(circle at 82% 18%, rgba(199, 213, 234, 0.06), transparent 22%),
-    radial-gradient(circle at 18% 82%, rgba(82, 184, 166, 0.04), transparent 20%),
-    linear-gradient(180deg, #0B1420 0%, #060B12 48%, #04070C 100%);
-  color: #EDF2F8;
+    radial-gradient(circle at top, rgba(111, 132, 168, 0.10), transparent 24%),
+    radial-gradient(circle at 82% 18%, rgba(214, 222, 232, 0.05), transparent 20%),
+    radial-gradient(circle at 18% 82%, rgba(96, 111, 132, 0.05), transparent 20%),
+    linear-gradient(180deg, #081019 0%, #03070C 48%, #020408 100%);
+  color: #E8EDF3;
   font-family: 'Manrope', sans-serif;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
@@ -36,10 +36,10 @@ body {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #09111B;
+  background: #071019;
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #6C92FF, #BFD0E6);
+  background: linear-gradient(180deg, #6F84A8, #C2CCD8);
   border-radius: 999px;
 }
 
@@ -63,27 +63,27 @@ body {
 }
 
 .glow-purple {
-  box-shadow: 0 0 36px rgba(108, 146, 255, 0.12);
+  box-shadow: 0 0 36px rgba(111, 132, 168, 0.10);
 }
 
 /* Glass card */
 .glass {
-  background: rgba(13, 20, 31, 0.78);
+  background: rgba(10, 16, 24, 0.80);
   backdrop-filter: blur(14px) saturate(120%);
   -webkit-backdrop-filter: blur(14px) saturate(120%);
-  border: 1px solid rgba(177, 194, 214, 0.10);
+  border: 1px solid rgba(177, 194, 214, 0.08);
 }
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, #F6F8FB 0%, #D8E1EC 45%, #91B0E7 100%);
+  background: linear-gradient(135deg, #F5F7FA 0%, #D7DFE8 46%, #92A4BA 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .gradient-text-2 {
-  background: linear-gradient(135deg, #EEF4FB 0%, #C6D8EA 50%, #86A7DA 100%);
+  background: linear-gradient(135deg, #EEF2F7 0%, #C7D3E1 50%, #899AAD 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -91,11 +91,11 @@ body {
 
 /* Timeline line */
 .timeline-line {
-  background: linear-gradient(to bottom, #AFC3E7, #6C92FF, transparent);
+  background: linear-gradient(to bottom, #B9C3CF, #6F84A8, transparent);
 }
 
 /* Selection */
 ::selection {
-  background: rgba(108, 146, 255, 0.24);
+  background: rgba(111, 132, 168, 0.24);
   color: white;
 }

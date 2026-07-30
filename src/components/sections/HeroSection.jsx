@@ -24,22 +24,22 @@ export function HeroSection() {
     <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div
-          className="absolute top-1/4 left-1/4 w-[28rem] h-[28rem] bg-accent/12 rounded-full blur-3xl animate-pulse"
+          className="absolute top-1/4 left-1/4 w-[28rem] h-[28rem] bg-accent/8 rounded-full blur-3xl animate-pulse"
           style={{ animationDuration: "4s" }}
         />
         <div
-          className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-accent-2/10 rounded-full blur-3xl animate-pulse"
+          className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-accent-2/6 rounded-full blur-3xl animate-pulse"
           style={{ animationDuration: "6s", animationDelay: "1s" }}
         />
         <div
-          className="absolute top-1/2 right-1/3 w-64 h-64 bg-sky-500/5 rounded-full blur-3xl animate-pulse"
+          className="absolute top-1/2 right-1/3 w-64 h-64 bg-slate-500/4 rounded-full blur-3xl animate-pulse"
           style={{ animationDuration: "8s", animationDelay: "2s" }}
         />
         <div
-          className="absolute inset-0 opacity-[0.03]"
+          className="absolute inset-0 opacity-[0.02]"
           style={{
             backgroundImage:
-              "linear-gradient(rgba(108,146,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(108,146,255,1) 1px, transparent 1px)",
+              "linear-gradient(rgba(111,132,168,1) 1px, transparent 1px), linear-gradient(90deg, rgba(111,132,168,1) 1px, transparent 1px)",
             backgroundSize: "60px 60px",
           }}
         />
@@ -48,17 +48,17 @@ export function HeroSection() {
       <div className="relative max-w-6xl mx-auto px-6 pt-32 pb-20">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-accent/10 border border-accent/20 rounded-full mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-accent/8 border border-accent/18 rounded-full mb-6">
               <MapPin size={12} className="text-accent" />
               <span className="font-mono text-xs text-accent">{profile.location}</span>
               {profile.available && (
                 <>
                   <span className="w-px h-3 bg-border" />
                   <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-green-400" />
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-300 opacity-60" />
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-300" />
                   </span>
-                  <span className="font-mono text-xs text-green-400">Open to work</span>
+                  <span className="font-mono text-xs text-emerald-300">Open to work</span>
                 </>
               )}
             </div>
@@ -86,7 +86,7 @@ export function HeroSection() {
             <div className="flex flex-wrap gap-3 mb-10">
               <button
                 onClick={() => handleScroll("#expertise")}
-                className="px-6 py-3 bg-accent text-white font-medium rounded-full shadow-[0_18px_40px_rgba(79,140,255,0.24)] hover:bg-accent/90 transition-all duration-200 active:scale-95"
+                className="px-6 py-3 bg-accent text-white font-medium rounded-full shadow-[0_18px_40px_rgba(0,0,0,0.30)] hover:bg-accent/90 transition-all duration-200 active:scale-95"
               >
                 Explore Expertise
               </button>

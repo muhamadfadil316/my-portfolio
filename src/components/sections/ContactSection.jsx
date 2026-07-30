@@ -7,10 +7,10 @@ export function ContactSection() {
   const [copied, setCopied] = useState(null)
 
   const socials = [
-    { icon: <Mail size={20} />, label: 'Email', value: profile.email, href: `mailto:${profile.email}`, color: '#4F8CFF' },
-    { icon: <Github size={20} />, label: 'GitHub', value: '@muhamadfadil316', href: profile.github, color: '#D7E2EE' },
-    { icon: <Linkedin size={20} />, label: 'LinkedIn', value: 'Muhamad Fadil', href: profile.linkedin, color: '#5AAEFA' },
-    { icon: <Instagram size={20} />, label: 'Instagram', value: '@fadilorsy', href: profile.instagram, color: '#8FD5E8' },
+    { icon: <Mail size={20} />, label: 'Email', value: profile.email, href: `mailto:${profile.email}`, color: '#6F84A8' },
+    { icon: <Github size={20} />, label: 'GitHub', value: '@muhamadfadil316', href: profile.github, color: '#C9D3E0' },
+    { icon: <Linkedin size={20} />, label: 'LinkedIn', value: 'Muhamad Fadil', href: profile.linkedin, color: '#8799B4' },
+    { icon: <Instagram size={20} />, label: 'Instagram', value: '@fadilorsy', href: profile.instagram, color: '#A7B6C9' },
   ]
 
   return (
@@ -33,10 +33,10 @@ export function ContactSection() {
                     <div className="w-px h-4 bg-border" />
                     <span className="flex items-center gap-1.5">
                       <span className="relative flex h-2 w-2">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
-                        <span className="relative inline-flex rounded-full h-2 w-2 bg-green-400" />
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-300 opacity-60" />
+                        <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-300" />
                       </span>
-                      <span className="text-green-400 text-xs font-mono">Available for select work</span>
+                      <span className="text-emerald-300 text-xs font-mono">Available for select work</span>
                     </span>
                   </>
                 )}
