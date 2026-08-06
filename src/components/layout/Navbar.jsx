@@ -6,7 +6,7 @@ import { useActiveSection } from "../../hooks/useActiveSection";
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
-  const activeSection = useActiveSection(['hero', 'about', 'expertise', 'awards', 'mc', 'projects', 'experience', 'hobbies', 'contact'])
+  const activeSection = useActiveSection(['hero', 'about', 'expertise', 'awards', 'experience', 'mc', 'projects', 'hobbies', 'contact'])
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)

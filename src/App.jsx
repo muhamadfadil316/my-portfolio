@@ -20,9 +20,9 @@ export default function App() {
         <AboutSection />
         <ExpertiseSection />
         <AwardsSection />
+        <ExperienceSection />
         <MCSection />
         <ProjectsSection />
-        <ExperienceSection />
         <HobbiesSection />
         <ContactSection />
       </main>

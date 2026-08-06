@@ -8,10 +8,10 @@ export const profile = {
   title: 'AI Engineer',
   tagline: 'Building the future, one commit at a time.',
   bio: `Halo! Saya Muhamad Fadil, mahasiswa Teknik Informatika yang passionate di bidang web development, kecerdasan buatan, dan desain digital. Saya percaya teknologi bukan sekadar alat — ini adalah bahasa baru untuk bercerita dan menciptakan dampak nyata.`,
-  bioDetail: `Selain ngoding, saya berminat di bidang komunikasi dan aktif sebagai MC di berbagai event kampus, komunitas, training, dan acara lainnya. Saat ini saya sudah memiliki pengalaman memandu 50+ event sebagai MC. Saya juga mengembangkan expertise di social media strategy dan video editing, sambil terus bereksperimen dengan stack baru, mendesain antarmuka yang intuitif, dan berbagi ilmu lewat komunitas developer lokal.`,
+  bioDetail: `Selain ngoding, saya berminat di bidang komunikasi, administrasi, dan aktif sebagai MC di berbagai event kampus, komunitas, training, dan acara lainnya. Saat ini saya sudah memiliki pengalaman memandu 50+ event sebagai MC. Saya juga mengembangkan expertise di social media strategy dan video editing, sambil terus bereksperimen dengan stack baru, mendesain antarmuka yang intuitif, dan berbagi ilmu lewat komunitas developer lokal.`,
   email: 'dilmuh@gmail.com',
   github: 'https://github.com/muhamadfadil316',
-  linkedin: 'https://linkedin.com/in/muhamadfadil',
+  linkedin: 'https://www.linkedin.com/in/fadilorsy?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
   instagram: 'https://instagram.com/fadilorsy',
   location: 'Jakarta, Indonesia',
   available: true,
@@ -21,6 +21,7 @@ export const skills = [
   { name: 'Frontend Development', level: 90, color: '#4F8CFF' },
   { name: 'UI/UX Design', level: 80, color: '#5AAEFA' },
   { name: 'Public Speaking', level: 85, color: '#6BCBFF' },
+  { name: 'Administration', level: 82, color: '#7EA1C4' },
   { name: 'Artificial Intelligence', level: 75, color: '#8FD5E8' },
   { name: 'Content Creation', level: 70, color: '#6E9BFF' },
   { name: 'Backend Development', level: 65, color: '#A6C8FF' },
@@ -44,6 +45,10 @@ export const expertiseAreas = [
   {
     title: 'Communication',
     description: 'Menyampaikan pesan dengan jelas, sopan, dan efektif dalam berbagai situasi.',
+  },
+  {
+    title: 'Administration',
+    description: 'Mengelola data, dokumen, jadwal, dan alur kerja agar kegiatan berjalan rapi serta tepat waktu.',
   },
   {
     title: 'Socialization',
@@ -229,6 +234,24 @@ export const mcEvents = [
 export const experiences = [
   {
     id: 1,
+    role: 'Master of Ceremony (MC) - Training Program',
+    org: 'Proxsis Academy',
+    period: 'Juli 2026 - Sekarang',
+    type: 'Program',
+    description: 'Menjadi MC pada program pelatihan Proxsis Academy, menjaga alur acara tetap profesional, tertib, interaktif, dan tepat waktu.',
+    color: '#4F8CFF',
+  },
+  {
+    id: 2,
+    role: 'Wakil Divisi Acara',
+    org: 'Adu Genre Kabupaten Bogor',
+    period: '2026',
+    type: 'Kepanitiaan',
+    description: 'Mendukung koordinasi divisi acara, menyusun alur kegiatan, dan memastikan pelaksanaan acara berjalan rapi sesuai kebutuhan program.',
+    color: '#5AAEFA',
+  },
+  {
+    id: 3,
     role: 'Kepala Departemen Hubungan Masyarakat',
     org: 'BEM STT Terpadu Nurul Fikri',
     period: '2026 — Sekarang',
@@ -237,7 +260,7 @@ export const experiences = [
     color: '#4F8CFF',
   },
   {
-    id: 2,
+    id: 4,
     role: 'Staf Departemen Hubungan Masyarakat',
     org: 'BEM STT Terpadu Nurul Fikri',
     period: '2025',
@@ -246,7 +269,7 @@ export const experiences = [
     color: '#5AAEFA',
   },
   {
-    id: 3,
+    id: 5,
     role: 'Staf Divisi Hubungan Masyarakat',
     org: 'Forum Genre Kabupaten Bogor',
     period: '2026 - 2028',
@@ -255,7 +278,7 @@ export const experiences = [
     color: '#6BCBFF',
   },
   {
-    id: 4,
+    id: 6,
     role: 'Staf Administrasi Bagian Logistik',
     org: 'Polres Bogor Cibinong',
     period: '2023',
@@ -264,7 +287,7 @@ export const experiences = [
     color: '#7EA1C4',
   },
   {
-    id: 5,
+    id: 7,
     role: 'Operator 1 Pemilu 2024',
     org: 'KPPS',
     period: 'Februari 2024',
@@ -273,7 +296,7 @@ export const experiences = [
     color: '#8FD5E8',
   },
   {
-    id: 6,
+    id: 8,
     role: 'Mentor Ormik Explore',
     org: 'STT Terpadu Nurul Fikri',
     period: '2025',
@@ -282,7 +305,7 @@ export const experiences = [
     color: '#A6C8FF',
   },
   {
-    id: 7,
+    id: 9,
     role: 'Staff Event Ormik Aruna',
     org: 'Aruna 2026',
     period: '2026',
@@ -317,8 +340,8 @@ export const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'Expertise', href: '#expertise' },
   { label: 'Awards', href: '#awards' },
-  { label: 'Projects', href: '#projects' },
   { label: 'Experience', href: '#experience' },
+  { label: 'Projects', href: '#projects' },
   { label: 'Hobbies', href: '#hobbies' },
   { label: 'Contact', href: '#contact' },
 ]
