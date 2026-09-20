@@ -229,6 +229,24 @@ export const mcEvents = [
     description: 'Menjadi MC Utama pada Kuliah Umum bertajuk "From Microservices to AI: OpenShift Powers Any Workload, Anywhere". Sukses mengawal jalannya pemaparan materi mutakhir mengenai Kecerdasan Artifisial, Virtualisasi, dan Keamanan Jaringan di hadapan ratusan akademisi dan praktisi IT.',
     image: '/kuliahumum.JPEG',
   },
+  {
+    id: 10,
+    title: 'MC di Berbagai Program Pelatihan Korporat',
+    event: 'Program Pelatihan',
+    date: '2026',
+    description: 'Menjadi MC profesional dalam berbagai program pelatihan nasional: PT Bank Rakyat Indonesia (BRI), Pertamina MIGAS, Kementerian Komunikasi dan Digital (Komdigi), dan PT Kereta Api Indonesia (KAI). Sukses memandu sesi pembelajaran, memfasilitasi diskusi peserta, dan menciptakan suasana pelatihan yang interaktif, produktif, serta profesional.',
+    image: '/training.jpeg',
+    imagePosition: '50% 20%',
+  },
+  {
+    id: 11,
+    title: 'Pengarahan dan Pembukaan PKKMB - Ormik Aruna 2026',
+    event: 'Pengenalan Akademik Mahasiswa Baru',
+    date: 'Agustus 2026',
+    description: 'Menjadi MC dalam acara Pengenalan Kehidupan Kampus bagi Mahasiswa Baru (PKKMB) Ormik Aruna 2026. Memandu pembukaan acara, menghadirkan semangat kebersamaan, serta menyambut generasi baru mahasiswa dengan energi positif dan profesional.',
+    image: '/ormik.jpeg',
+    imagePosition: '50% 20%',
+  },
 ]
 
 export const experiences = [

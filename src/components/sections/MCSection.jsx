@@ -15,7 +15,7 @@ function Modal({ event, onClose }) {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="relative h-64">
-          <img src={event.image} alt={event.title} className="w-full h-full object-cover" />
+          <img src={event.image} alt={event.title} className="w-full h-full object-cover" style={{objectPosition: event.imagePosition || '50% 50%'}} />
           <div className="absolute inset-0 bg-gradient-to-t from-bg to-transparent" />
           <button
             onClick={onClose}
@@ -66,6 +66,7 @@ export function MCSection() {
                     src={event.image}
                     alt={event.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    style={{objectPosition: event.imagePosition || '50% 50%'}}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/40 to-transparent" />
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
