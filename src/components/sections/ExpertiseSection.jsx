@@ -8,7 +8,7 @@ export function ExpertiseSection() {
         <SectionTitle
           label="Expertise"
           title="Bidang yang saya kuasai"
-          subtitle="Daftar bidang yang saya suka dan saya kembangkan secara konsisten dalam aktivitas, acara, dan proyek."
+          subtitle="Fokus pada Artificial Intelligence dan AI for Business, didukung kemampuan public speaking, komunikasi, serta eksekusi digital."
         />
 
         <div className="grid md:grid-cols-2 gap-6">

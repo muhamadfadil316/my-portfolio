@@ -8,7 +8,7 @@ export function AboutSection() {
         <SectionTitle
           label="About Me"
           title="Siapa saya?"
-          subtitle="Mahasiswa, developer, dan MC yang suka bikin hal-hal menarik."
+          subtitle="Mahasiswa AI, engineer, dan public speaker yang suka membangun solusi sekaligus menghidupkan acara."
         />
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -19,7 +19,7 @@ export function AboutSection() {
 
             <div className="grid grid-cols-2 gap-4 pt-4">
               {[
-                { label: 'Expertise', value: '2' },
+                { label: 'Fokus Utama', value: 'AI & Public Speaking' },
                 { label: 'Events MC', value: '50+' },
                 { label: 'Organisasi', value: '2' },
                 { label: 'Cups of Coffee', value: '∞' },

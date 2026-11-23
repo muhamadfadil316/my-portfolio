@@ -5,10 +5,10 @@
 export const profile = {
   name: 'Muhamad Fadil',
   nickname: 'Fadil',
-  title: 'AI Engineer',
-  tagline: 'Building the future, one commit at a time.',
-  bio: `Halo! Saya Muhamad Fadil, mahasiswa Teknik Informatika yang passionate di bidang web development, kecerdasan buatan, dan desain digital. Saya percaya teknologi bukan sekadar alat — ini adalah bahasa baru untuk bercerita dan menciptakan dampak nyata.`,
-  bioDetail: `Selain ngoding, saya berminat di bidang komunikasi, administrasi, dan aktif sebagai MC di berbagai event kampus, komunitas, training, dan acara lainnya. Saat ini saya sudah memiliki pengalaman memandu 50+ event sebagai MC. Saya juga mengembangkan expertise di social media strategy dan video editing, sambil terus bereksperimen dengan stack baru, mendesain antarmuka yang intuitif, dan berbagi ilmu lewat komunitas developer lokal.`,
+  title: 'AI Engineer & Public Speaker',
+  tagline: 'Building intelligent solutions and delivering ideas with impact.',
+  bio: `Halo! Saya Muhamad Fadil, mahasiswa Teknik Informatika yang berfokus pada pengembangan Artificial Intelligence, Machine Learning, dan solusi teknologi berbasis data. Saya menikmati proses mengubah masalah bisnis menjadi sistem cerdas yang terukur, sekaligus membangun pengalaman digital yang bermanfaat.`,
+  bioDetail: `Selain mengembangkan kompetensi di bidang AI, saya aktif sebagai Master of Ceremony (MC) dan public speaker di berbagai event kampus, organisasi, komunitas, pelatihan korporat, dan acara nasional. Saya sudah dipercaya memandu 50+ event dengan komunikasi yang jelas, interaktif, dan profesional. Saya juga mengembangkan pemahaman AI for Business, social media strategy, dan video editing untuk menciptakan solusi yang menggabungkan teknologi, komunikasi, dan dampak nyata.`,
   email: 'dilmuh@gmail.com',
   github: 'https://github.com/muhamadfadil316',
   linkedin: 'https://www.linkedin.com/in/fadilorsy?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
@@ -18,22 +18,34 @@ export const profile = {
 }
 
 export const skills = [
-  { name: 'Frontend Development', level: 90, color: '#4F8CFF' },
-  { name: 'UI/UX Design', level: 80, color: '#5AAEFA' },
-  { name: 'Public Speaking', level: 85, color: '#6BCBFF' },
-  { name: 'Administration', level: 82, color: '#7EA1C4' },
-  { name: 'Artificial Intelligence', level: 75, color: '#8FD5E8' },
-  { name: 'Content Creation', level: 70, color: '#6E9BFF' },
-  { name: 'Backend Development', level: 65, color: '#A6C8FF' },
+  { name: 'Artificial Intelligence', level: 90, color: '#8FD5E8' },
+  { name: 'Public Speaking', level: 92, color: '#6BCBFF' },
+  { name: 'AI for Business', level: 88, color: '#4F8CFF' },
+  { name: 'Frontend Development', level: 82, color: '#5AAEFA' },
+  { name: 'UI/UX Design', level: 80, color: '#7EA1C4' },
+  { name: 'Administration', level: 82, color: '#A6C8FF' },
+  { name: 'Content Creation', level: 75, color: '#6E9BFF' },
 ]
 
 export const techStack = [
-  'React.js', 'Next.js', 'TypeScript', 'Node.js',
-  'Tailwind CSS', 'Python', 'PostgreSQL',
-  'Figma', 'Git', 'Communication', 'Problem Solving',
+  'Python', 'Artificial Intelligence', 'Machine Learning', 'Data Analysis',
+  'React.js', 'TypeScript', 'Node.js', 'Tailwind CSS',
+  'PostgreSQL', 'Figma', 'Git', 'Public Speaking',
 ]
 
 export const expertiseAreas = [
+  {
+    title: 'Artificial Intelligence & AI Engineering',
+    description: 'Membangun solusi berbasis kecerdasan buatan, mengolah data, serta mengembangkan dan mengevaluasi model machine learning untuk kebutuhan praktis dan bisnis.',
+  },
+  {
+    title: 'AI for Business',
+    description: 'Mempelajari penerapan AI dalam berbagai konteks bisnis untuk meningkatkan efisiensi, mendukung pengambilan keputusan, dan menciptakan nilai melalui teknologi.',
+  },
+  {
+    title: 'Public Speaking & MC',
+    description: 'Memandu berbagai acara sebagai MC dan moderator dengan komunikasi yang jelas, interaktif, profesional, serta mampu menjaga alur dan energi acara.',
+  },
   {
     title: 'Social Media Specialist',
     description: 'Menyusun konten, kalender posting, dan arah kampanye agar brand tetap konsisten dan engaging.',
@@ -43,28 +55,16 @@ export const expertiseAreas = [
     description: 'Menyunting video promosi dan konten digital dengan pacing yang rapi, modern, dan mudah dicerna.',
   },
   {
-    title: 'Communication',
-    description: 'Menyampaikan pesan dengan jelas, sopan, dan efektif dalam berbagai situasi.',
-  },
-  {
     title: 'Administration',
     description: 'Mengelola data, dokumen, jadwal, dan alur kerja agar kegiatan berjalan rapi serta tepat waktu.',
-  },
-  {
-    title: 'Socialization',
-    description: 'Mudah membangun relasi, beradaptasi dengan orang baru, dan menjaga kerja sama yang baik.',
-  },
-  {
-    title: 'Becoming Talent',
-    description: 'Terbiasa tampil, membawakan acara, dan menjaga suasana tetap hidup di depan audiens.',
   },
   {
     title: 'Promoting',
     description: 'Membantu memperkenalkan ide, acara, atau program agar lebih dikenal dan menarik perhatian.',
   },
   {
-    title: 'Others',
-    description: 'Fleksibel untuk belajar hal baru sesuai kebutuhan tim, acara, dan proyek yang sedang berjalan.',
+    title: 'Collaboration & Adaptability',
+    description: 'Mudah membangun relasi, beradaptasi dengan tim dan audiens baru, serta menjaga kerja sama yang produktif.',
   },
 ]
 
@@ -252,6 +252,15 @@ export const mcEvents = [
 export const experiences = [
   {
     id: 1,
+    role: 'Peserta AI for Business',
+    org: 'NF Academy',
+    period: '2026',
+    type: 'Program',
+    description: 'Mempelajari penerapan Artificial Intelligence untuk mendukung proses bisnis, meningkatkan efisiensi operasional, dan mengidentifikasi peluang pemanfaatan AI dalam pengambilan keputusan serta pengembangan solusi berbasis teknologi.',
+    color: '#8FD5E8',
+  },
+  {
+    id: 2,
     role: 'Master of Ceremony (MC) - Training Program',
     org: 'Proxsis Academy',
     period: 'Juli 2026 - Sekarang',
@@ -260,7 +269,7 @@ export const experiences = [
     color: '#4F8CFF',
   },
   {
-    id: 2,
+    id: 3,
     role: 'Wakil Divisi Acara',
     org: 'Adu Genre Kabupaten Bogor',
     period: '2026',
@@ -269,7 +278,7 @@ export const experiences = [
     color: '#5AAEFA',
   },
   {
-    id: 3,
+    id: 4,
     role: 'Kepala Departemen Hubungan Masyarakat',
     org: 'BEM STT Terpadu Nurul Fikri',
     period: '2026 — Sekarang',
@@ -278,7 +287,7 @@ export const experiences = [
     color: '#4F8CFF',
   },
   {
-    id: 4,
+    id: 5,
     role: 'Staf Departemen Hubungan Masyarakat',
     org: 'BEM STT Terpadu Nurul Fikri',
     period: '2025',
@@ -287,7 +296,7 @@ export const experiences = [
     color: '#5AAEFA',
   },
   {
-    id: 5,
+    id: 6,
     role: 'Staf Divisi Hubungan Masyarakat',
     org: 'Forum Genre Kabupaten Bogor',
     period: '2026 - 2028',
@@ -296,7 +305,7 @@ export const experiences = [
     color: '#6BCBFF',
   },
   {
-    id: 6,
+    id: 7,
     role: 'Staf Administrasi Bagian Logistik',
     org: 'Polres Bogor Cibinong',
     period: '2023',
@@ -305,7 +314,7 @@ export const experiences = [
     color: '#7EA1C4',
   },
   {
-    id: 7,
+    id: 8,
     role: 'Operator 1 Pemilu 2024',
     org: 'KPPS',
     period: 'Februari 2024',
@@ -314,7 +323,7 @@ export const experiences = [
     color: '#8FD5E8',
   },
   {
-    id: 8,
+    id: 9,
     role: 'Mentor Ormik Explore',
     org: 'STT Terpadu Nurul Fikri',
     period: '2025',
@@ -323,7 +332,7 @@ export const experiences = [
     color: '#A6C8FF',
   },
   {
-    id: 9,
+    id: 10,
     role: 'Staff Event Ormik Aruna',
     org: 'Aruna 2026',
     period: '2026',
