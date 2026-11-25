@@ -95,7 +95,6 @@ export const awards = [
 
 // ------------------------------------------------------------
 // PROJECTS — Proyek yang pernah saya buat
-// Kartu proyek menampilkan deskripsi saja (tanpa gambar).
 // Cara menambah proyek baru: copy salah satu objek di bawah,
 // lalu ubah isinya sesuai kebutuhan.
 // ------------------------------------------------------------
@@ -152,6 +151,16 @@ export const projects = [
     date: '2025',
     description: 'Membuat model prediksi apakah TPS penuh atau tidak penuh menggunakan algoritma Random Forest dan Decision Tree. Proyek pada mata kuliah Data Mining.',
     tech: ['Python', 'Random Forest', 'Decision Tree'],
+    link: '',
+  },
+  {
+    id: 7,
+    title: 'Automasi Generasi Konten AI dengan n8n',
+    category: 'Workflow Automation',
+    date: '2026',
+    description: 'Merancang workflow otomatis berbasis n8n yang terhubung dengan Telegram dan Google Gemini. Bot menerima permintaan teks, gambar, atau video, memprosesnya melalui alur yang sesuai, lalu mengirimkan hasilnya kembali ke Telegram—termasuk ide konten yang siap dibagikan ke tim.',
+    image: '/n8n_project.png',
+    tech: ['n8n', 'Telegram Bot API', 'Google Gemini', 'REST API', 'JavaScript'],
     link: '',
   },
 ]

@@ -32,6 +32,13 @@ function Modal({ project, onClose }) {
             </button>
           </div>
           <h3 className="font-display font-bold text-xl text-text mb-2">{project.title}</h3>
+          {project.image && (
+            <img
+              src={project.image}
+              alt={`Workflow ${project.title}`}
+              className="w-full max-h-64 object-contain rounded-xl border border-border/60 bg-bg/70 mb-4"
+            />
+          )}
           <p className="text-text-dim text-sm leading-relaxed">{project.description}</p>
 
           {project.tech?.length > 0 && (
@@ -83,6 +90,14 @@ export function ProjectsSection() {
                 className="glass rounded-2xl p-5 cursor-pointer group border border-border/60 bg-surface/35 hover:border-accent/30 hover:-translate-y-1 transition-all duration-300 flex flex-col"
                 onClick={() => setSelectedProject(project)}
               >
+                {project.image && (
+                  <img
+                    src={project.image}
+                    alt={`Workflow ${project.title}`}
+                    loading="lazy"
+                    className="w-full h-36 object-cover object-top rounded-xl border border-border/60 mb-4"
+                  />
+                )}
                 <div className="flex items-start justify-between gap-3 mb-3">
                   <div className="p-2.5 bg-accent/10 border border-accent/20 rounded-xl group-hover:bg-accent/15 transition-colors">
                     <FolderGit2 size={20} className="text-accent" />
