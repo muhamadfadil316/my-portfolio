@@ -7,10 +7,10 @@ export function ContactSection() {
   const [copied, setCopied] = useState(null)
 
   const socials = [
-    { icon: <Mail size={20} />, label: 'Email', value: profile.email, href: `mailto:${profile.email}`, color: '#6F84A8' },
-    { icon: <Github size={20} />, label: 'GitHub', value: '@muhamadfadil316', href: profile.github, color: '#C9D3E0' },
-    { icon: <Linkedin size={20} />, label: 'LinkedIn', value: 'Muhamad Fadil', href: profile.linkedin, color: '#8799B4' },
-    { icon: <Instagram size={20} />, label: 'Instagram', value: '@fadilorsy', href: profile.instagram, color: '#A7B6C9' },
+    { icon: <Mail size={20} />, label: 'Email', value: profile.email, href: `mailto:${profile.email}`, color: '#C6A875' },
+    { icon: <Github size={20} />, label: 'GitHub', value: '@muhamadfadil316', href: profile.github, color: '#E2CC9B' },
+    { icon: <Linkedin size={20} />, label: 'LinkedIn', value: 'Muhamad Fadil', href: profile.linkedin, color: '#B99158' },
+    { icon: <Instagram size={20} />, label: 'Instagram', value: '@fadilorsy', href: profile.instagram, color: '#D2B47C' },
   ]
 
   return (

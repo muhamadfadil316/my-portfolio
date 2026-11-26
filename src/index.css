@@ -3,8 +3,9 @@
 @import "tailwindcss/utilities";
 
 :root {
-  --accent: #6F84A8;
-  --accent-2: #D6DEE8;
+  color-scheme: dark;
+  --accent: #C6A875;
+  --accent-2: #E8D8B8;
 }
 
 * {
@@ -18,13 +19,13 @@ html {
 }
 
 body {
-  background-color: #03070C;
+  background-color: #0B0A08;
   background-image:
-    radial-gradient(circle at top, rgba(111, 132, 168, 0.10), transparent 24%),
-    radial-gradient(circle at 82% 18%, rgba(214, 222, 232, 0.05), transparent 20%),
-    radial-gradient(circle at 18% 82%, rgba(96, 111, 132, 0.05), transparent 20%),
-    linear-gradient(180deg, #081019 0%, #03070C 48%, #020408 100%);
-  color: #E8EDF3;
+    radial-gradient(circle at 16% 8%, rgba(198, 168, 117, 0.12), transparent 25%),
+    radial-gradient(circle at 84% 20%, rgba(232, 216, 184, 0.055), transparent 22%),
+    radial-gradient(circle at 18% 82%, rgba(116, 95, 63, 0.07), transparent 24%),
+    linear-gradient(180deg, #100F0C 0%, #0B0A08 52%, #080807 100%);
+  color: #F2EEE6;
   font-family: 'Manrope', sans-serif;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
@@ -32,14 +33,25 @@ body {
   overflow-x: hidden;
 }
 
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #071019;
+  background: #100F0C;
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #6F84A8, #C2CCD8);
+  background: linear-gradient(180deg, #C6A875, #E8D8B8);
   border-radius: 999px;
 }
 
@@ -63,27 +75,27 @@ body {
 }
 
 .glow-purple {
-  box-shadow: 0 0 36px rgba(111, 132, 168, 0.10);
+  box-shadow: 0 0 48px rgba(198, 168, 117, 0.16);
 }
 
 /* Glass card */
 .glass {
-  background: rgba(10, 16, 24, 0.80);
+  background: rgba(22, 20, 16, 0.82);
   backdrop-filter: blur(14px) saturate(120%);
   -webkit-backdrop-filter: blur(14px) saturate(120%);
-  border: 1px solid rgba(177, 194, 214, 0.08);
+  border: 1px solid rgba(232, 216, 184, 0.11);
 }
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, #F5F7FA 0%, #D7DFE8 46%, #92A4BA 100%);
+  background: linear-gradient(135deg, #F6F0E4 0%, #E8D8B8 48%, #B99158 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .gradient-text-2 {
-  background: linear-gradient(135deg, #EEF2F7 0%, #C7D3E1 50%, #899AAD 100%);
+  background: linear-gradient(135deg, #F2EBDD 0%, #DCC69C 52%, #A98755 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -91,11 +103,22 @@ body {
 
 /* Timeline line */
 .timeline-line {
-  background: linear-gradient(to bottom, #B9C3CF, #6F84A8, transparent);
+  background: linear-gradient(to bottom, #E8D8B8, #A98755, transparent);
 }
 
 /* Selection */
 ::selection {
-  background: rgba(111, 132, 168, 0.24);
-  color: white;
+  background: rgba(198, 168, 117, 0.32);
+  color: #FFF9EF;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

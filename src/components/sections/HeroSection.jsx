@@ -1,4 +1,4 @@
-import { ArrowDown, Github, Linkedin, Mail, MapPin } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Github, Linkedin, Mail, MapPin, Sparkles } from "lucide-react";
 import { profile, techStack } from "../../data";
 import { useTypingEffect } from "../../hooks/useTypingEffect";
 
@@ -21,97 +21,82 @@ export function HeroSection() {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none">
+    <section id="hero" className="relative isolate min-h-screen overflow-hidden">
+      <div className="pointer-events-none absolute inset-0">
         <div
-          className="absolute top-1/4 left-1/4 w-[28rem] h-[28rem] bg-accent/8 rounded-full blur-3xl animate-pulse"
-          style={{ animationDuration: "4s" }}
+          className="absolute -left-40 top-20 h-[26rem] w-[26rem] rounded-full bg-accent/10 blur-3xl"
         />
         <div
-          className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-accent-2/6 rounded-full blur-3xl animate-pulse"
-          style={{ animationDuration: "6s", animationDelay: "1s" }}
+          className="absolute -right-36 top-1/3 h-96 w-96 rounded-full bg-accent-2/5 blur-3xl"
         />
         <div
-          className="absolute top-1/2 right-1/3 w-64 h-64 bg-slate-500/4 rounded-full blur-3xl animate-pulse"
-          style={{ animationDuration: "8s", animationDelay: "2s" }}
-        />
-        <div
-          className="absolute inset-0 opacity-[0.02]"
+          className="absolute inset-0 opacity-[0.035]"
           style={{
-            backgroundImage:
-              "linear-gradient(rgba(111,132,168,1) 1px, transparent 1px), linear-gradient(90deg, rgba(111,132,168,1) 1px, transparent 1px)",
-            backgroundSize: "60px 60px",
+            backgroundImage: "linear-gradient(rgba(198,168,117,1) 1px, transparent 1px), linear-gradient(90deg, rgba(198,168,117,1) 1px, transparent 1px)",
+            backgroundSize: "72px 72px",
+            maskImage: "linear-gradient(to bottom, black, transparent 85%)",
           }}
         />
       </div>
 
-      <div className="relative max-w-6xl mx-auto px-6 pt-32 pb-20">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-accent/8 border border-accent/18 rounded-full mb-6">
-              <MapPin size={12} className="text-accent" />
-              <span className="font-mono text-xs text-accent">{profile.location}</span>
-              {profile.available && (
-                <>
-                  <span className="w-px h-3 bg-border" />
-                  <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-300 opacity-60" />
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-300" />
-                  </span>
-                  <span className="font-mono text-xs text-emerald-300">Open to work</span>
-                </>
-              )}
+      <div className="relative mx-auto max-w-6xl px-5 pb-14 pt-28 sm:px-6 sm:pb-20 sm:pt-32">
+        <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+          <div className="max-w-2xl">
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-accent/25 bg-accent/8 px-3.5 py-2">
+              <Sparkles size={14} className="text-accent" />
+              <span className="font-mono text-[10px] tracking-[0.2em] text-accent sm:text-xs">
+                AI ENGINEER <span className="mx-1.5 text-accent/50">/</span> COMMUNICATOR
+              </span>
             </div>
 
-            <h1 className="font-display font-semibold text-5xl md:text-6xl lg:text-7xl text-text mb-4 leading-[0.95] tracking-tight">
-              {nameParts[0]} <span className="gradient-text">{nameParts.slice(1).join(" ")}</span>
+            <h1 className="mb-5 font-display text-[2.65rem] font-semibold leading-[1.03] tracking-[-0.055em] text-text sm:text-6xl lg:text-7xl">
+              {nameParts[0]}<br />
+              <span className="gradient-text">{nameParts.slice(1).join(" ")}</span>
             </h1>
 
-            <p className="text-accent-2 font-medium mb-4 uppercase tracking-[0.22em] text-xs">
-              {profile.tagline}
-            </p>
-
-            <div className="h-8 mb-6">
-              <p className="font-mono text-lg text-text-dim">
-                <span className="text-accent-2">{"> "}</span>
-                {typedText}
-                <span className="animate-pulse text-accent">|</span>
-              </p>
-            </div>
-
-            <p className="text-text-dim text-base leading-relaxed mb-8 max-w-lg">
+            <p className="mb-5 max-w-xl text-sm leading-7 text-text-dim sm:text-base">
               {profile.bio}
             </p>
 
-            <div className="flex flex-wrap gap-3 mb-10">
+            <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-accent-2 sm:text-sm">
+              {profile.tagline}
+            </p>
+            <div className="mb-7 min-h-6">
+              <p className="font-mono text-xs text-text-dim sm:text-sm">
+                <span className="text-accent">{typedText}</span>
+                <span className="ml-1 animate-pulse text-accent-2">|</span>
+              </p>
+            </div>
+
+            <div className="mb-8 flex flex-col gap-3 sm:flex-row">
               <button
                 onClick={() => handleScroll("#expertise")}
-                className="px-6 py-3 bg-accent text-white font-medium rounded-full shadow-[0_18px_40px_rgba(0,0,0,0.30)] hover:bg-accent/90 transition-all duration-200 active:scale-95"
+                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-accent px-6 py-3 font-semibold text-[#17130d] shadow-[0_14px_36px_rgba(198,168,117,0.18)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-accent-2 active:scale-[0.98] sm:w-auto"
               >
-                Explore Expertise
+                Explore my work <ArrowUpRight size={17} />
               </button>
               <button
                 onClick={() => handleScroll("#contact")}
-                className="px-6 py-3 glass text-text font-medium rounded-full hover:border-accent/40 transition-all duration-200 active:scale-95"
+                className="inline-flex min-h-12 items-center justify-center rounded-full border border-border bg-white/[0.03] px-6 py-3 font-medium text-text transition-all duration-200 hover:border-accent/50 hover:bg-white/[0.06] active:scale-[0.98] sm:w-auto"
               >
                 Contact Me
               </button>
             </div>
 
-            <div className="flex flex-wrap items-center gap-4">
+            <div className="flex flex-wrap items-center gap-3">
               {[
                 {
-                  icon: <Github size={18} />,
+                  icon: <Github size={17} />,
                   href: profile.github,
                   label: "GitHub",
                 },
                 {
-                  icon: <Linkedin size={18} />,
+                  icon: <Linkedin size={17} />,
                   href: profile.linkedin,
                   label: "LinkedIn",
                 },
                 {
-                  icon: <Mail size={18} />,
+                  icon: <Mail size={17} />,
                   href: `mailto:${profile.email}`,
                   label: "Email",
                 },
@@ -122,66 +107,76 @@ export function HeroSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   title={s.label}
-                  className="p-2.5 text-text-dim hover:text-accent hover:bg-accent/10 rounded-xl border border-border hover:border-accent/30 transition-all duration-200"
+                  aria-label={s.label}
+                  className="rounded-full border border-border bg-white/[0.025] p-2.5 text-text-dim transition-all duration-200 hover:border-accent/40 hover:bg-accent/10 hover:text-accent"
                 >
                   {s.icon}
                 </a>
               ))}
-              <div className="h-px flex-1 bg-gradient-to-r from-border to-transparent max-w-24" />
-              <span className="font-mono text-xs text-text-dim">{profile.email}</span>
+              <div className="hidden h-px w-8 bg-border sm:block" />
+              <div className="inline-flex items-center gap-2 text-xs text-text-dim">
+                <MapPin size={13} className="text-accent" />
+                {profile.location}
+                {profile.available && (
+                  <span className="ml-1 inline-flex items-center gap-1.5 text-emerald-200">
+                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-300" />
+                    Available
+                  </span>
+                )}
+              </div>
             </div>
           </div>
 
-          <div className="relative flex justify-center items-center">
-            <div className="relative">
-              <div className="w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden border border-accent/30 glow-purple relative z-10 shadow-[0_30px_80px_rgba(0,0,0,0.35)]">
+          <div className="relative mx-auto flex w-full max-w-[25rem] items-center justify-center lg:ml-auto">
+            <div className="absolute inset-5 rounded-full bg-accent/10 blur-3xl" />
+            <div className="relative w-full">
+              <div className="absolute -inset-3 rounded-[2.25rem] border border-dashed border-accent/25" />
+              <div className="glow-purple relative z-10 aspect-[4/4.7] overflow-hidden rounded-[2rem] border border-accent/25 bg-surface shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
                 <img
                   src="/profile.JPEG"
                   alt={profile.name}
-                  className="w-full h-full object-cover"
-                  style={{ objectPosition: "50% 20%" }}
+                  className="h-full w-full object-cover"
+                  style={{ objectPosition: "50% 18%" }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-bg/70 via-bg/10 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/5 to-transparent" />
+                <div className="absolute left-4 top-4 rounded-full border border-white/15 bg-bg/70 px-3 py-1.5 font-mono text-[10px] tracking-[0.16em] text-accent-2 backdrop-blur-md">
+                  JAKARTA, INDONESIA
+                </div>
+                <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-5 sm:p-6">
+                  <div>
+                    <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-accent-2/80">Building with purpose</p>
+                    <p className="mt-1 font-display text-2xl font-semibold text-white sm:text-3xl">Ideas into impact.</p>
+                  </div>
+                  <div className="shrink-0 rounded-2xl border border-white/15 bg-bg/65 px-3 py-2 text-right backdrop-blur-md">
+                    <p className="font-display text-xl font-semibold text-accent-2">50+</p>
+                    <p className="font-mono text-[9px] uppercase tracking-[0.12em] text-text-dim">events hosted</p>
+                  </div>
+                </div>
               </div>
-              <div
-                className="absolute inset-[-12px] rounded-full border border-dashed border-accent/20"
-                style={{ animationDuration: "20s" }}
-              />
-            </div>
-
-            <div className="absolute top-0 left-0 z-20 -translate-x-10 translate-y-6 glass rounded-2xl px-4 py-3 max-w-56 border border-border/70 shadow-[0_16px_40px_rgba(0,0,0,0.22)]">
-              <p className="font-mono text-[11px] tracking-[0.2em] uppercase text-text-dim">Focus</p>
-              <p className="mt-1 text-sm text-text">AI, AI for Business, Public Speaking</p>
-            </div>
-
-            <div className="absolute bottom-0 right-0 z-20 translate-x-10 -translate-y-4 glass rounded-2xl px-4 py-3 max-w-48 border border-border/70 shadow-[0_16px_40px_rgba(0,0,0,0.22)]">
-              <p className="font-mono text-[11px] tracking-[0.2em] uppercase text-text-dim">Impact</p>
-              <p className="mt-1 text-sm text-text">50+ MC events</p>
             </div>
           </div>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-border/50">
-          <p className="font-mono text-xs text-text-dim mb-4 tracking-[0.3em] uppercase">Tech Stack</p>
+        <div className="mt-14 border-t border-border/70 pt-6 sm:mt-16 sm:flex sm:items-start sm:gap-8">
+          <p className="mb-4 shrink-0 font-mono text-[10px] uppercase tracking-[0.24em] text-text-dim sm:mb-0 sm:pt-2">
+            A few tools I use
+          </p>
           <div className="flex flex-wrap gap-2">
             {techStack.map((t) => (
-              <span
-                key={t}
-                className="px-3 py-1 bg-surface border border-border/80 rounded-full text-xs text-text-dim hover:text-accent hover:border-accent/40 transition-colors font-mono"
-              >
+              <span key={t} className="rounded-full border border-border/80 bg-white/[0.025] px-3 py-1.5 font-mono text-[10px] text-text-dim transition-colors hover:border-accent/40 hover:text-accent-2 sm:text-xs">
                 {t}
               </span>
             ))}
           </div>
         </div>
 
-        <div className="mt-12 flex justify-center">
+        <div className="mt-8 flex justify-center sm:mt-10">
           <button
             onClick={() => handleScroll("#about")}
-            className="flex flex-col items-center gap-2 text-text-dim hover:text-accent transition-colors"
+            className="flex items-center gap-2 text-text-dim transition-colors hover:text-accent"
           >
-            <span className="font-mono text-xs tracking-[0.28em] uppercase">scroll down</span>
-            <ArrowDown size={16} />
+            <span className="font-mono text-[10px] uppercase tracking-[0.22em]">Discover more</span>
+            <ArrowDown size={14} />
           </button>
         </div>
       </div>

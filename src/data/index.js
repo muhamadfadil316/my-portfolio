@@ -6,7 +6,7 @@ export const profile = {
   name: 'Muhamad Fadil',
   nickname: 'Fadil',
   title: 'AI Engineer & Public Speaker',
-  tagline: 'Building intelligent solutions and delivering ideas with impact.',
+  tagline: 'Building intelligent solutions with impact.',
   bio: `Halo! Saya Muhamad Fadil, mahasiswa Teknik Informatika yang berfokus pada pengembangan Artificial Intelligence, Machine Learning, dan solusi teknologi berbasis data. Saya menikmati proses mengubah masalah bisnis menjadi sistem cerdas yang terukur, sekaligus membangun pengalaman digital yang bermanfaat.`,
   bioDetail: `Selain mengembangkan kompetensi di bidang AI, saya aktif sebagai Master of Ceremony (MC) dan public speaker di berbagai event kampus, organisasi, komunitas, pelatihan korporat, dan acara nasional. Saya sudah dipercaya memandu 50+ event dengan komunikasi yang jelas, interaktif, dan profesional. Saya juga mengembangkan pemahaman AI for Business, social media strategy, dan video editing untuk menciptakan solusi yang menggabungkan teknologi, komunikasi, dan dampak nyata.`,
   email: 'dilmuh@gmail.com',
@@ -18,13 +18,13 @@ export const profile = {
 }
 
 export const skills = [
-  { name: 'Artificial Intelligence', level: 90, color: '#8FD5E8' },
-  { name: 'Public Speaking', level: 92, color: '#6BCBFF' },
-  { name: 'AI for Business', level: 88, color: '#4F8CFF' },
-  { name: 'Frontend Development', level: 82, color: '#5AAEFA' },
-  { name: 'UI/UX Design', level: 80, color: '#7EA1C4' },
-  { name: 'Administration', level: 82, color: '#A6C8FF' },
-  { name: 'Content Creation', level: 75, color: '#6E9BFF' },
+  { name: 'Artificial Intelligence', level: 90, color: '#D8BB84' },
+  { name: 'Public Speaking', level: 92, color: '#C8A56E' },
+  { name: 'AI for Business', level: 88, color: '#B99158' },
+  { name: 'Frontend Development', level: 82, color: '#D2B47C' },
+  { name: 'UI/UX Design', level: 80, color: '#A98C63' },
+  { name: 'Administration', level: 82, color: '#E2CC9B' },
+  { name: 'Content Creation', level: 75, color: '#C3A06A' },
 ]
 
 export const techStack = [
@@ -266,7 +266,7 @@ export const experiences = [
     period: '2026',
     type: 'Program',
     description: 'Mempelajari penerapan Artificial Intelligence untuk mendukung proses bisnis, meningkatkan efisiensi operasional, dan mengidentifikasi peluang pemanfaatan AI dalam pengambilan keputusan serta pengembangan solusi berbasis teknologi.',
-    color: '#8FD5E8',
+    color: '#D8BB84',
   },
   {
     id: 2,
@@ -275,7 +275,7 @@ export const experiences = [
     period: 'Juli 2026 - Sekarang',
     type: 'Program',
     description: 'Menjadi MC pada program pelatihan Proxsis Academy, menjaga alur acara tetap profesional, tertib, interaktif, dan tepat waktu.',
-    color: '#4F8CFF',
+    color: '#B99158',
   },
   {
     id: 3,
@@ -284,7 +284,7 @@ export const experiences = [
     period: '2026',
     type: 'Kepanitiaan',
     description: 'Mendukung koordinasi divisi acara, menyusun alur kegiatan, dan memastikan pelaksanaan acara berjalan rapi sesuai kebutuhan program.',
-    color: '#5AAEFA',
+    color: '#D2B47C',
   },
   {
     id: 4,
@@ -293,7 +293,7 @@ export const experiences = [
     period: '2026 — Sekarang',
     type: 'Organisasi',
     description: 'Memimpin departemen Hubungan Masyarakat, mengembangkan platform digital BEM, dan mengelola tim.',
-    color: '#4F8CFF',
+    color: '#B99158',
   },
   {
     id: 5,
@@ -302,7 +302,7 @@ export const experiences = [
     period: '2025',
     type: 'Organisasi',
     description: 'Media Sosial Specialist: Meningkatkan engagement media sosial BEM sebesar 50% dalam 6 bulan dengan konten kreatif dan strategi digital.',
-    color: '#5AAEFA',
+    color: '#D2B47C',
   },
   {
     id: 6,
@@ -311,7 +311,7 @@ export const experiences = [
     period: '2026 - 2028',
     type: 'Organisasi',
     description: 'Media partner dan sponsorship coordinator untuk acara tahunan Forum Genre Kabupaten Bogor dengan 500+ peserta remaja. Membangun kemitraan dengan 20+ organisasi lokal untuk mendukung acara.',
-    color: '#6BCBFF',
+    color: '#C8A56E',
   },
   {
     id: 7,
@@ -320,7 +320,7 @@ export const experiences = [
     period: '2023',
     type: 'Perusahaan Pemerintah',
     description: 'Mengelola surat menyurat dan administrasi logistik untuk operasional kepolisian di wilayah Bogor. Meningkatkan efisiensi proses administrasi sebesar 30% dengan sistem digitalisasi.',
-    color: '#7EA1C4',
+    color: '#A98C63',
   },
   {
     id: 8,
@@ -329,7 +329,7 @@ export const experiences = [
     period: 'Februari 2024',
     type: 'Kepanitiaan',
     description: 'Bertugas sebagai Operator 1 KPPS pada Pemilu 2024: mengelola pendaftaran dan verifikasi pemilih di TPS, mengoperasikan perangkat pencatat suara, serta memastikan kelancaran dan keamanan pemungutan suara.',
-    color: '#8FD5E8',
+    color: '#D8BB84',
   },
   {
     id: 9,
@@ -338,7 +338,7 @@ export const experiences = [
     period: '2025',
     type: 'Kepanitiaan',
     description: 'Menjadi mentor pada Masa Orientasi Akademik (Ormik) 2025: membimbing mahasiswa baru, memfasilitasi sesi pengenalan kampus dan kebijakan akademik, serta membantu adaptasi kegiatan perkuliahan.',
-    color: '#A6C8FF',
+    color: '#E2CC9B',
   },
   {
     id: 10,
@@ -347,7 +347,7 @@ export const experiences = [
     period: '2026',
     type: 'Kepanitiaan',
     description: 'Bertugas sebagai staff event dalam Ormik Aruna 2026 dengan fokus menyusun rundown acara, merancang konsep kegiatan, dan memastikan alur pelaksanaan berjalan rapi, terkoordinasi, dan sesuai kebutuhan acara.',
-    color: '#7EA1C4',
+    color: '#A98C63',
   },
 ]
 
